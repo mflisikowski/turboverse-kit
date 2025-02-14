@@ -1,8 +1,5 @@
 {
   "editor.formatOnSave": true,
-  "eslint.workingDirectories": [{
-    "mode": "auto"
-  }],
   "spellright.language": ["en"],
   "spellright.documentTypes": ["latex", "plaintext"]
 }
