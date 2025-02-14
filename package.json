@@ -12,11 +12,10 @@
     "lint:packages:fix": "sherif --fix",
     "format": "biome format --write .",
     "lint:biome": "biome lint .",
-    "lint:biome:fix": "biome check --apply",
     "prepare": "husky"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.5.3",
+    "@biomejs/biome": "1.9.4",
     "@commitlint/cli": "19.7.1",
     "@commitlint/config-conventional": "19.7.1",
     "cspell": "8.17.3",
