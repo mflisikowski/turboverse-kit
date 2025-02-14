@@ -20,6 +20,16 @@
         "^lint"
       ]
     },
+    "lint:biome": {
+      "inputs": [
+        "**/*.{js,ts,jsx,tsx}"
+      ]
+    },
+    "format": {
+      "inputs": [
+        "**/*.{js,ts,jsx,tsx}"
+      ]
+    },
     "check-types": {
       "dependsOn": [
         "^check-types"
