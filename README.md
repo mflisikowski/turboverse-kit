@@ -19,11 +19,12 @@ A modern, scalable monorepo starter kit built with Next.js, TypeScript, Tailwind
 ```text
 turboverse-kit/
 ├── apps/
-│   └── web/                 # Next.js web application
+│   └── web/                      # Next.js web application
 ├── packages/
-│   ├── tailwind-config/     # Shared Tailwind configuration
-│   ├── typescript-config/   # Shared TypeScript configuration
-│   └── ui/                  # Shared UI component library
+│   └── ui/                       # Shared UI component library
+└── tools/
+    ├── tailwind-config/          # Shared Tailwind configuration
+    └── typescript-config/        # Shared TypeScript configuration
 ```
 
 ## Getting Started
@@ -70,21 +71,25 @@ The main Next.js web application. Contains the primary user-facing application.
 
 ### /packages/ui
 
-Shared UI component library built with React, TypeScript, and Tailwind CSS.
+Shared UI component library built with React, TypeScript, and Tailwind CSS. Includes:
 
-### /packages/tailwind-config
+- `src/components/` - Reusable React components
+- `src/hooks/` - Custom React hooks
+- `src/css/` - Global styles and CSS utilities
+- `src/lib/` - Utility functions and shared code
 
-Shared Tailwind CSS configuration used across all applications and packages.
+### /tools
 
-### /packages/typescript-config
+Configuration packages shared across the monorepo:
 
-Shared TypeScript configuration files for different types of packages (base, Next.js, React library).
+- `tailwind-config` - Base Tailwind CSS configuration used as a foundation for all applications and packages.
+- `typescript-config` - Shared TypeScript configuration files.
 
 ## Development
 
 ### Adding a New Package
 
-1. Create a new directory in the appropriate location (`apps/` or `packages/`)
+1. Create a new directory in the appropriate location (`apps/`, `packages/`, or `tools/`)
 2. Initialize package.json:
 
    ```bash
