@@ -1,5 +1,5 @@
 {
-  "name": "turborepo",
+  "name": "turboverse-kit",
   "private": true,
   "scripts": {
     "purge": "rm -rf **/node_modules .turbo",
