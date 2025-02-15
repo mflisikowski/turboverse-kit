@@ -67,11 +67,11 @@ turboverse-kit/
 
 ## Workspaces
 
-### /apps/web
+### apps/web
 
 The main Next.js web application. Contains the primary user-facing application.
 
-### /packages/ui
+### packages/ui
 
 Shared UI component library built with React, TypeScript, and Tailwind CSS. Includes:
 
@@ -80,7 +80,7 @@ Shared UI component library built with React, TypeScript, and Tailwind CSS. Incl
 - `src/css/` - Global styles and CSS utilities
 - `src/lib/` - Utility functions and shared code
 
-### /tools
+### tools
 
 Configuration packages shared across the monorepo:
 
