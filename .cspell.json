@@ -11,7 +11,8 @@
     "commitlint",
     "jsonc",
     "typescriptreact",
-    "javascriptreact"
+    "javascriptreact",
+    "turboverse"
   ],
   "ignorePaths": [
     "node_modules/**",
