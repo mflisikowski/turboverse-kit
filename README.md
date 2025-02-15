@@ -20,8 +20,10 @@ A modern, scalable monorepo starter kit built with Next.js, TypeScript, Tailwind
 turboverse-kit/
 ├── apps/
 │   └── web/                      # Next.js web application
+│
 ├── packages/
 │   └── ui/                       # Shared UI component library
+│
 └── tools/
     ├── tailwind-config/          # Shared Tailwind configuration
     └── typescript-config/        # Shared TypeScript configuration
