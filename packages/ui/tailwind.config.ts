@@ -1,11 +1,12 @@
 import type { Config } from 'tailwindcss';
-import tailwindcssAnimate from 'tailwindcss-animate';
+
+import baseConfig from '@repo/tailwind-config';
+
+const baseContent = baseConfig.content || [];
 
 const config = {
-  darkMode: ['class'],
-  content: ['**/*.{ts,tsx}'],
-  theme: {},
-  plugins: [tailwindcssAnimate],
+  ...baseConfig,
+  content: [...baseContent, './src/**/*.{js,ts,jsx,tsx,mdx}'],
 } satisfies Config;
 
 export default config;
