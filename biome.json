@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "organizeImports": {
     "enabled": true
   },
@@ -7,8 +7,14 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "complexity": {
+        "noUselessFragments": "off"
+      },
       "nursery": {
-        "all": true
+        "all": true,
+        "useComponentExportOnlyModules": "off",
+        "useExplicitType": "off",
+        "useSortedClasses": "off"
       }
     }
   },
@@ -26,7 +32,12 @@
     }
   },
   "files": {
-    "ignore": ["node_modules/**", "dist/**", ".next/**", ".turbo/**"]
+    "ignore": [
+      "node_modules/**",
+      "dist/**",
+      ".next/**",
+      ".turbo/**"
+    ]
   },
   "json": {
     "parser": {
