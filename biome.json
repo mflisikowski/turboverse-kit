@@ -32,12 +32,7 @@
     }
   },
   "files": {
-    "ignore": [
-      "node_modules/**",
-      "dist/**",
-      ".next/**",
-      ".turbo/**"
-    ]
+    "ignore": ["node_modules/**", "dist/**", ".next/**", ".turbo/**"]
   },
   "json": {
     "parser": {
