@@ -29,9 +29,5 @@
     "*.{ts,tsx}": "pnpm lint:biome && pnpm lint:packages",
     "*.{ts,tsx,md}": "cspell --no-must-find-files"
   },
-  "packageManager": "pnpm@10.4.0",
-  "engines": {
-    "node": ">=22.0.0",
-    "pnpm": ">=10.0.0"
-  }
+  "packageManager": "pnpm@10.4.0"
 }
