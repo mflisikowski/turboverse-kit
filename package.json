@@ -2,7 +2,7 @@
   "name": "turboverse-kit",
   "private": true,
   "scripts": {
-    "purge": "rm -rf **/node_modules .turbo",
+    "purge": "find . -name 'node_modules' -type d -prune -exec rm -rf {} + && rm -rf .turbo",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo run lint",
@@ -29,9 +29,9 @@
     "*.{ts,tsx}": "pnpm lint:biome && pnpm lint:packages",
     "*.{ts,tsx,md}": "cspell --no-must-find-files"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.4.0",
   "engines": {
-    "node": ">=22.0.0 <23.0.0",
-    "pnpm": ">=9.0.0 <10.0.0"
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
   }
 }

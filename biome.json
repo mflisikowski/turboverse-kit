@@ -13,8 +13,10 @@
       "nursery": {
         "all": true,
         "useComponentExportOnlyModules": "off",
+        "useImportRestrictions": "off",
+        "useSortedClasses": "off",
         "useExplicitType": "off",
-        "useSortedClasses": "off"
+        "noProcessEnv": "off"
       }
     }
   },
@@ -32,7 +34,13 @@
     }
   },
   "files": {
-    "ignore": ["node_modules/**", "dist/**", ".next/**", ".turbo/**"]
+    "ignore": [
+      "packages/payload/src/payload.types.ts",
+      "node_modules/**",
+      "dist/**",
+      ".next/**",
+      ".turbo/**"
+    ]
   },
   "json": {
     "parser": {
