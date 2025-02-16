@@ -1,6 +1,18 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "ui": "tui",
+  "globalEnv": [
+    "POSTGRES_URL",
+    "POSTGRES_PRISMA_URL",
+    "SUPABASE_URL",
+    "POSTGRES_URL_NON_POOLING",
+    "SUPABASE_JWT_SECRET",
+    "POSTGRES_USER",
+    "POSTGRES_PASSWORD",
+    "POSTGRES_DATABASE",
+    "SUPABASE_SERVICE_ROLE_KEY",
+    "POSTGRES_HOST",
+    "SUPABASE_ANON_KEY"
+  ],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
@@ -23,5 +35,6 @@
       "cache": false,
       "persistent": true
     }
-  }
+  },
+  "ui": "tui"
 }
