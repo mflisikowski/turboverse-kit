@@ -76,6 +76,25 @@ importers:
         specifier: 5.7.3
         version: 5.7.3
 
+  packages/env:
+    dependencies:
+      '@t3-oss/env-nextjs':
+        specifier: ^0.12.0
+        version: 0.12.0(typescript@5.7.3)(zod@3.24.2)
+      zod:
+        specifier: ^3.23.8
+        version: 3.24.2
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../tools/typescript-config
+      '@types/node':
+        specifier: ^20.17.12
+        version: 20.17.19
+      typescript:
+        specifier: ^5.7.2
+        version: 5.7.3
+
   packages/ui:
     dependencies:
       '@radix-ui/react-slot':
