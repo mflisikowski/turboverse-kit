@@ -13,6 +13,7 @@ A modern, scalable monorepo starter kit built with Next.js, TypeScript, Tailwind
 - 🐶 Husky - Git hooks made easy
 - 📋 CommitLint - Lint commit messages
 - ⚛️ Next.js - React framework with SSR support
+- 📦 Payload CMS - Headless CMS
 
 ## Project Structure
 
@@ -20,8 +21,11 @@ A modern, scalable monorepo starter kit built with Next.js, TypeScript, Tailwind
 turboverse-kit/
 ├── apps/
 │   └── web/                      # Next.js web application
+│   └── cms/                      # Payload CMS application
 │
 ├── packages/
+│   └── env/                      # Environment variables
+│   └── payload/                  # Payload CMS package
 │   └── ui/                       # Shared UI component library
 │
 └── tools/
@@ -71,6 +75,10 @@ turboverse-kit/
 
 The main Next.js web application. Contains the primary user-facing application.
 
+### apps/cms
+
+The Payload CMS application. Contains the CMS functionality and admin interface.
+
 ### packages/ui
 
 Shared UI component library built with React, TypeScript, and Tailwind CSS. Includes:
@@ -79,6 +87,14 @@ Shared UI component library built with React, TypeScript, and Tailwind CSS. Incl
 - `src/hooks/` - Custom React hooks
 - `src/css/` - Global styles and CSS utilities
 - `src/lib/` - Utility functions and shared code
+
+### packages/payload
+
+The Payload CMS package. Contains the core functionality and configuration for the CMS.
+
+### packages/env
+
+The environment variables package. Contains the environment variables for the entire monorepo.
 
 ### tools
 
