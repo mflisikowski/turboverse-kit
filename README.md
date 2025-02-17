@@ -15,30 +15,7 @@ A modern, scalable monorepo starter kit built with Next.js, TypeScript, Tailwind
 - ⚛️ Next.js - React framework with SSR support
 - 📦 Payload CMS - Headless CMS
 
-## Project Structure
-
-```text
-turboverse-kit/
-├── apps/
-│   └── web/                      # Next.js web application
-│   └── cms/                      # Payload CMS application
-│
-├── packages/
-│   └── env/                      # Environment variables
-│   └── payload/                  # Payload CMS package
-│   └── ui/                       # Shared UI component library
-│
-└── tools/
-    ├── tailwind-config/          # Shared Tailwind configuration
-    └── typescript-config/        # Shared TypeScript configuration
-```
-
 ## Getting Started
-
-### Prerequisites
-
-- Node.js 22.x or later
-- PNPM 9.x or later
 
 ### Installation
 
@@ -61,13 +38,31 @@ turboverse-kit/
    pnpm dev
    ```
 
-## Available Scripts
+### Available Scripts
 
 - `pnpm dev` - Start all applications in development mode
 - `pnpm build` - Build all applications and packages
 - `pnpm lint` - Run linting for all applications and packages
 - `pnpm test` - Run tests across the entire monorepo
 - `pnpm clean` - Clean build artifacts and node_modules
+
+## Project Structure
+
+```text
+turboverse-kit/
+├── apps/
+│   └── web/                      # Next.js web application
+│   └── cms/                      # Payload CMS application
+│
+├── packages/
+│   └── env/                      # Environment variables
+│   └── payload/                  # Payload CMS package
+│   └── ui/                       # Shared UI component library
+│
+└── tools/
+    ├── tailwind-config/          # Shared Tailwind configuration
+    └── typescript-config/        # Shared TypeScript configuration
+```
 
 ## Workspaces
 
