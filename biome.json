@@ -35,6 +35,7 @@
   },
   "files": {
     "ignore": [
+      "packages/payload/src/payload.schema.ts",
       "packages/payload/src/payload.types.ts",
       "node_modules/**",
       "dist/**",

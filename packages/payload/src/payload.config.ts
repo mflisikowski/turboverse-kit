@@ -26,6 +26,7 @@ export default buildConfig({
   },
 
   db: vercelPostgresAdapter({
+    generateSchemaOutputFile: path.resolve(dirname, 'payload.schema.ts'),
     idType: 'uuid',
     pool: {
       connectionString: env.PAYLOAD_PRIVATE_DATABASE_URI,

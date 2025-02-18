@@ -46,10 +46,16 @@
     "./plugins/*": "./src/plugins/*/index.ts",
     "./payload-types": "./src/payload.types.ts",
     "./payload-config": "./src/payload.config.ts",
+    "./payload-schema": "./src/payload.schema.ts",
     "./payload-api": "./src/payload-api.ts"
   },
   "watch": {
     "generate:types": {
+      "patterns": ["src"],
+      "extensions": "ts,tsx",
+      "quiet": false
+    },
+    "generate:dbschema": {
       "patterns": ["src"],
       "extensions": "ts,tsx",
       "quiet": false

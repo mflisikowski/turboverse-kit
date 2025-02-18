@@ -14,7 +14,8 @@
     "jsonc",
     "typescriptreact",
     "javascriptreact",
-    "turboverse"
+    "turboverse",
+    "rels"
   ],
   "ignorePaths": [
     "node_modules/**",
