@@ -14,6 +14,7 @@ A modern, scalable monorepo starter kit built with Next.js, TypeScript, Tailwind
 - 📋 CommitLint - Lint commit messages
 - ⚛️ Next.js - React framework with SSR support
 - 📦 Payload CMS - Headless CMS
+- 📧 React Email - Email templates
 
 ## Getting Started
 
@@ -58,6 +59,7 @@ turboverse-kit/
 │
 ├── packages/
 │   └── analytics/                # Analytics package
+│   └── email/                    # Email templates
 │   └── env/                      # Environment variables
 │   └── payload/                  # Payload CMS package
 │   └── ui/                       # Shared UI component library
@@ -88,6 +90,10 @@ The main Next.js web application. Contains the primary user-facing application.
 ### packages/analytics
 
 The analytics package. Contains the analytics functionality for the entire monorepo.
+
+### packages/email
+
+The email package. Contains the email templates for the entire monorepo.
 
 ### packages/env
 
@@ -156,6 +162,7 @@ This project follows the [Conventional Commits](https://www.conventionalcommits.
 - [Payload CMS](https://payloadcms.com/)
 - [PNPM](https://pnpm.io/)
 - [React](https://react.dev/)
+- [React Email](https://react.email/)
 - [React Expo](https://expo.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Turborepo](https://turbo.build/)

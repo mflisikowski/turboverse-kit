@@ -51,12 +51,16 @@
   },
   "watch": {
     "generate:types": {
-      "patterns": ["src"],
+      "patterns": [
+        "src"
+      ],
       "extensions": "ts,tsx",
       "quiet": false
     },
     "generate:dbschema": {
-      "patterns": ["src"],
+      "patterns": [
+        "src"
+      ],
       "extensions": "ts,tsx",
       "quiet": false
     }

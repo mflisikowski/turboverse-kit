@@ -1,0 +1,23 @@
+{
+  "name": "@repo/email",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "email build --dir templates",
+    "dev": "email dev --dir templates --port 3002"
+  },
+  "dependencies": {
+    "@react-email/components": "0.0.33",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@repo/tailwind-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "19.0.7",
+    "@types/react-dom": "19.0.3",
+    "react-email": "3.0.7",
+    "tailwindcss": "^3.4.17"
+  }
+}

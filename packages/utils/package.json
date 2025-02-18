@@ -7,8 +7,8 @@
     "./*": "./src/*.ts"
   },
   "dependencies": {
-    "tailwind-merge": "3.0.1",
-    "clsx": "2.1.1"
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.0.1"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
