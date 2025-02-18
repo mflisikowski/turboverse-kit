@@ -51,11 +51,13 @@ A modern, scalable monorepo starter kit built with Next.js, TypeScript, Tailwind
 ```text
 turboverse-kit/
 ├── apps/
+│   └── cms/                      # Payload CMS application
+│   └── mobile/                   # React Native mobile application
 │   └── studio/                   # Drizzle Studio (development only)
 │   └── web/                      # Next.js web application
-│   └── cms/                      # Payload CMS application
 │
 ├── packages/
+│   └── analytics/                # Analytics package
 │   └── env/                      # Environment variables
 │   └── payload/                  # Payload CMS package
 │   └── ui/                       # Shared UI component library
@@ -67,17 +69,33 @@ turboverse-kit/
 
 ## Workspaces
 
-### apps/web
-
-The main Next.js web application. Contains the primary user-facing application.
-
 ### apps/cms
 
 The Payload CMS application. Contains the CMS functionality and admin interface.
 
+### apps/mobile
+
+The React Native mobile application. Contains the mobile application.
+
 ### apps/studio
 
 The Drizzle Studio application. Contains the Drizzle Studio interface for the database.
+
+### apps/web
+
+The main Next.js web application. Contains the primary user-facing application.
+
+### packages/analytics
+
+The analytics package. Contains the analytics functionality for the entire monorepo.
+
+### packages/env
+
+The environment variables package. Contains the environment variables for the entire monorepo.
+
+### packages/payload
+
+The Payload CMS package. Contains the core functionality and configuration for the CMS.
 
 ### packages/ui
 
@@ -87,14 +105,6 @@ Shared UI component library built with React, TypeScript, and Tailwind CSS. Incl
 - `src/hooks/` - Custom React hooks
 - `src/css/` - Global styles and CSS utilities
 - `src/lib/` - Utility functions and shared code
-
-### packages/payload
-
-The Payload CMS package. Contains the core functionality and configuration for the CMS.
-
-### packages/env
-
-The environment variables package. Contains the environment variables for the entire monorepo.
 
 ### tools
 
