@@ -149,7 +149,14 @@ This project follows the [Conventional Commits](https://www.conventionalcommits.
 
 ## Acknowledgments
 
-- [Turborepo](https://turbo.build/)
-- [PNPM](https://pnpm.io/)
+- [Biome](https://biomejs.dev)
+- [Conventional Commits](https://www.conventionalcommits.org/)
+- [Drizzle](https://orm.drizzle.team/)
 - [Next.js](https://nextjs.org/)
+- [Payload CMS](https://payloadcms.com/)
+- [PNPM](https://pnpm.io/)
+- [React](https://react.dev/)
+- [React Expo](https://expo.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Turborepo](https://turbo.build/)
+- [TypeScript](https://www.typescriptlang.org/)
