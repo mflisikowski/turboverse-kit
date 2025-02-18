@@ -51,6 +51,7 @@ A modern, scalable monorepo starter kit built with Next.js, TypeScript, Tailwind
 ```text
 turboverse-kit/
 ├── apps/
+│   └── studio/                   # Drizzle Studio (development only)
 │   └── web/                      # Next.js web application
 │   └── cms/                      # Payload CMS application
 │
@@ -73,6 +74,10 @@ The main Next.js web application. Contains the primary user-facing application.
 ### apps/cms
 
 The Payload CMS application. Contains the CMS functionality and admin interface.
+
+### apps/studio
+
+The Drizzle Studio application. Contains the Drizzle Studio interface for the database.
 
 ### packages/ui
 
