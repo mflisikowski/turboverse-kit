@@ -19,6 +19,7 @@
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@repo/ui": "workspace:*",
+    "@repo/utils": "workspace:*",
     "@types/node": "^22.9.0",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
