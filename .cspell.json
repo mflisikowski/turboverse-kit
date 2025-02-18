@@ -15,7 +15,9 @@
     "typescriptreact",
     "javascriptreact",
     "turboverse",
-    "rels"
+    "rels",
+    "posthog",
+    "pageleave"
   ],
   "ignorePaths": [
     "node_modules/**",
