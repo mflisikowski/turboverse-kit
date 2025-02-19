@@ -60,6 +60,7 @@ turboverse-kit/
 ├── packages/
 │   └── analytics/                # Analytics package
 │   └── auth/                     # Authentication
+│   └── constants/                # Shared constants
 │   └── email/                    # Email templates
 │   └── env/                      # Environment variables
 │   └── payload/                  # Payload CMS package
@@ -97,6 +98,11 @@ The analytics package. Contains the analytics functionality for the entire monor
 ### packages/auth
 
 The authentication package. Contains the authentication functionality for the entire monorepo.
+
+### packages/constants
+
+The constants package. Contains the constants for the entire monorepo.
+
 
 ### packages/email
 
