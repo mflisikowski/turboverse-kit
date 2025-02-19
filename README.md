@@ -64,6 +64,7 @@ turboverse-kit/
 │   └── payload/                  # Payload CMS package
 │   └── ui/                       # Shared UI component library
 │   └── utils/                    # Shared utility functions
+│   └── validation/               # Shared validation functions
 │
 └── tools/
     ├── tailwind-config/          # Shared Tailwind configuration
@@ -116,6 +117,11 @@ Shared UI component library built with React, TypeScript, and Tailwind CSS. Incl
 ### packages/utils
 
 The utility package. Contains the utility functions for the entire monorepo.
+
+### packages/validation
+
+The validation package. Contains the validation functions for the entire monorepo.
+
 
 ### tools
 
