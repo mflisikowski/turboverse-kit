@@ -63,6 +63,7 @@ turboverse-kit/
 │   └── env/                      # Environment variables
 │   └── payload/                  # Payload CMS package
 │   └── ui/                       # Shared UI component library
+│   └── utils/                    # Shared utility functions
 │
 └── tools/
     ├── tailwind-config/          # Shared Tailwind configuration
@@ -111,6 +112,10 @@ Shared UI component library built with React, TypeScript, and Tailwind CSS. Incl
 - `src/hooks/` - Custom React hooks
 - `src/css/` - Global styles and CSS utilities
 - `src/lib/` - Utility functions and shared code
+
+### packages/utils
+
+The utility package. Contains the utility functions for the entire monorepo.
 
 ### tools
 
