@@ -4,6 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
     "build": "email build",
     "dev": "email dev --port 3002"
   },
