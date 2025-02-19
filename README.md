@@ -59,6 +59,7 @@ turboverse-kit/
 │
 ├── packages/
 │   └── analytics/                # Analytics package
+│   └── auth/                     # Authentication
 │   └── email/                    # Email templates
 │   └── env/                      # Environment variables
 │   └── payload/                  # Payload CMS package
@@ -92,6 +93,10 @@ The main Next.js web application. Contains the primary user-facing application.
 ### packages/analytics
 
 The analytics package. Contains the analytics functionality for the entire monorepo.
+
+### packages/auth
+
+The authentication package. Contains the authentication functionality for the entire monorepo.
 
 ### packages/email
 
