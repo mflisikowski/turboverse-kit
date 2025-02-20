@@ -2,26 +2,34 @@
   "name": "@repo/email",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
+  "main": "src/index.ts",
   "scripts": {
-    "clean": "rm -rf .turbo node_modules",
+    "clean": "rm -rf .turbo node_modules .react-email",
     "lint": "biome check .",
     "format": "biome format --write .",
     "typecheck": "tsc --noEmit",
-    "build": "email build",
-    "dev": "email dev --port 3002"
+    "build": "dotenvx run -- email build --dir src/templates --packageManager pnpm",
+    "dev": "dotenvx run -- email dev --dir src/templates --port 3002"
   },
+  "workspaces": [".react-email"],
   "dependencies": {
     "@react-email/components": "0.0.33",
+    "@react-email/render": "1.0.5",
+    "@react-email/tailwind": "1.0.4",
+    "@repo/env": "workspace:*",
+    "nodemailer": "6.10.0",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "react-email": "3.0.7",
+    "resend": "4.1.2"
   },
   "devDependencies": {
+    "@dotenvx/dotenvx": "^1.36.0",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@types/nodemailer": "6.4.17",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
-    "react-email": "3.0.7",
     "tailwindcss": "^3.4.17"
   }
 }

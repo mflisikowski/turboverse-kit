@@ -1,12 +1,11 @@
 {
-  "extends": "@repo/typescript-config/base.json",
+  "extends": "@repo/typescript-config/nextjs.json",
   "exclude": ["node_modules"],
-  "include": ["emails"],
+  "include": ["."],
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   }
 }
