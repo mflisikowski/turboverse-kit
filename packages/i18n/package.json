@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "@payloadcms/translations": "3.20.0",
-    "@repo/payload": "workspace:*",
     "payload": "3.20.0",
     "react": "19.0.0"
   },
@@ -19,6 +18,7 @@
     "typescript": "5.7.3"
   },
   "exports": {
-    "./cms": "./src/cms/index.ts"
+    "./cms": "./src/cms.ts",
+    "./web": "./src/web.ts"
   }
 }

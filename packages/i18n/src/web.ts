@@ -1,4 +1,4 @@
-import { SupportedLocales } from '../config';
+import { SupportedLocales } from './config';
 
 export const nextIntlConfig = {
   defaultLocale: SupportedLocales.PL,

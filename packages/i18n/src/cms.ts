@@ -3,15 +3,15 @@ import type { Config } from 'payload';
 import { en } from '@payloadcms/translations/languages/en';
 import { pl } from '@payloadcms/translations/languages/pl';
 
-import { SupportedLocales } from '../config';
-import { translations } from './translations';
+import { translations } from './cms-translations';
+import { SupportedLocales } from './config';
 
 export const LocaleLabels = {
   [SupportedLocales.PL]: 'Polski',
   [SupportedLocales.EN]: 'English',
 };
 
-export const payloadLocalizationConfig: Config['localization'] = {
+export const localization: Config['localization'] = {
   defaultLocale: SupportedLocales.PL,
   fallback: true,
 
@@ -27,7 +27,7 @@ export const payloadLocalizationConfig: Config['localization'] = {
   ],
 };
 
-export const payloadI18nConfig: Config['i18n'] = {
+export const i18n: Config['i18n'] = {
   supportedLanguages: { en, pl },
   fallbackLanguage: SupportedLocales.PL,
   translations,
