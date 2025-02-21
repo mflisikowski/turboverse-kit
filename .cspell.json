@@ -20,6 +20,7 @@
     "pageleave"
   ],
   "ignorePaths": [
+    "packages/i18n/**",
     "node_modules/**",
     "pnpm-lock.yaml",
     ".turbo/**",
