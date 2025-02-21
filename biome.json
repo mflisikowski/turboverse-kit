@@ -37,6 +37,7 @@
     "ignore": [
       "packages/payload/src/payload.schema.ts",
       "packages/payload/src/payload.types.ts",
+      "packages/email/.react-email/**",
       "node_modules/**",
       "dist/**",
       ".next/**",
