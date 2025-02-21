@@ -1,35 +1,14 @@
 import { buildConfig } from 'payload';
 
-import { vercelPostgresAdapter } from '@payloadcms/db-vercel-postgres';
-import { en } from '@payloadcms/translations/languages/en';
-import { pl } from '@payloadcms/translations/languages/pl';
+import { i18n } from '@repo/i18n/cms';
 
-import { env } from '@repo/env/payload';
-
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-const filename = fileURLToPath(import.meta.url);
-const dirname = path.dirname(filename);
+import { db } from '@/config/database';
+import { secret } from '@/config/secret';
+import { typescript } from '@/config/typescript';
 
 export default buildConfig({
-  typescript: {
-    outputFile: path.resolve(dirname, 'payload.types.ts'),
-    schema: [],
-  },
-
-  secret: env.PAYLOAD_PRIVATE_SECRET,
-
-  i18n: {
-    supportedLanguages: { en, pl },
-    fallbackLanguage: 'en',
-  },
-
-  db: vercelPostgresAdapter({
-    generateSchemaOutputFile: path.resolve(dirname, 'payload.schema.ts'),
-    idType: 'uuid',
-    pool: {
-      connectionString: env.PAYLOAD_PRIVATE_DATABASE_URI,
-    },
-  }),
+  typescript,
+  secret,
+  i18n,
+  db,
 });

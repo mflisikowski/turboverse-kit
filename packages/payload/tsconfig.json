@@ -3,18 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@repo/payload/*": ["./src/*"],
-      "@repo/payload/access/*": ["./src/access/*"],
-      "@repo/payload/blocks/*": ["./src/blocks/*"],
-      "@repo/payload/collections/*": ["./src/collections/*"],
-      "@repo/payload/components/*": ["./src/components/*"],
-      "@repo/payload/fields/*": ["./src/fields/*"],
-      "@repo/payload/globals/*": ["./src/globals/*"],
-      "@repo/payload/helpers/*": ["./src/helpers/*"],
-      "@repo/payload/hooks/*": ["./src/hooks/*"],
-      "@repo/payload/payload-config": ["./src/payload.config"],
-      "@repo/payload/payload-types": ["./src/payload.types"],
-      "@repo/payload/plugins/*": ["./src/plugins/*"]
+      "@/config/*": ["./src/config/*"]
     }
   },
   "exclude": ["node_modules", "src/payload.types.ts", ".next"]
