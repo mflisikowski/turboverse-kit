@@ -2,6 +2,9 @@
   "name": "@repo/analytics",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules"
+  },
   "dependencies": {
     "@next/third-parties": "^15.1.6",
     "@vercel/analytics": "^1.4.1",

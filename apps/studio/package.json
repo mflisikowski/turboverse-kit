@@ -2,6 +2,7 @@
   "name": "@repo/studio",
   "version": "0.1.0",
   "scripts": {
+    "clean": "rm -rf .turbo node_modules",
     "dev": "npx drizzle-kit studio"
   },
   "dependencies": {

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "clean": "rm -rf .turbo node_modules",
     "generate:importmap": "pnpm --filter @repo/payload generate:importmap",
     "generate:dbschema": "pnpm --filter @repo/payload generate:db-schema",
     "generate:types": "pnpm --filter @repo/payload generate:types",

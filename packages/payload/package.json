@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "clean": "rm -rf .turbo node_modules",
     "generate:importmap": "pnpm payload generate:importmap",
     "generate:dbschema": "pnpm payload generate:db-schema",
     "generate:types": "pnpm payload generate:types",
@@ -51,16 +52,12 @@
   },
   "watch": {
     "generate:types": {
-      "patterns": [
-        "src"
-      ],
+      "patterns": ["src"],
       "extensions": "ts,tsx",
       "quiet": false
     },
     "generate:dbschema": {
-      "patterns": [
-        "src"
-      ],
+      "patterns": ["src"],
       "extensions": "ts,tsx",
       "quiet": false
     }

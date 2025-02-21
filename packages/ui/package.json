@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "type": "module",
   "private": true,
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules"
+  },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
     "class-variance-authority": "^0.7.0",
