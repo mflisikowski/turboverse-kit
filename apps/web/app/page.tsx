@@ -1,6 +1,8 @@
 import { getPayload } from '@repo/payload/payload-api';
 import type { User } from '@repo/payload/payload.types';
 
+import { User as UserIcon } from '@repo/icons';
+
 import { notFound } from 'next/navigation';
 import { cache } from 'react';
 
@@ -54,9 +56,12 @@ export default async function HomePage() {
         </p>
 
         <div className="bg-white shadow-sm rounded-xl p-6 border border-gray-100 text-left">
-          <p className="text-lg font-medium text-gray-700 mb-4">
-            Displaying user data fetched from PayloadCMS
-          </p>
+          <div className="flex items-center gap-2 mb-4">
+            <UserIcon className="w-4 h-4" />
+            <p className="text-lg font-medium text-gray-700">
+              Displaying user data fetched from PayloadCMS
+            </p>
+          </div>
 
           <code className="block p-4 rounded-lg bg-gray-50 text-sm font-mono text-gray-800 whitespace-pre overflow-x-auto">
             {JSON.stringify(user, null, 2)}
