@@ -2,7 +2,7 @@ import { getPayload } from '@repo/payload/payload-api';
 import type { User } from '@repo/payload/payload.types';
 
 import { User as UserIcon } from '@repo/icons';
-import { MFDLogo } from '@repo/icons';
+import { MFDLogo } from '@repo/icons/mfd';
 
 import { notFound } from 'next/navigation';
 import { cache } from 'react';
