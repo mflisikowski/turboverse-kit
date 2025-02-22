@@ -19,16 +19,22 @@ export const Users: CollectionConfig = {
       type: 'group',
       fields: [
         {
-          /** Text field docs: https://payloadcms.com/docs/fields/text */
-          label: ({ t }: TLabel) => t('custom:users-personal-info-first-name'),
-          name: 'first-name',
-          type: 'text',
-        },
-        {
-          /** Text field docs: https://payloadcms.com/docs/fields/text */
-          label: ({ t }: TLabel) => t('custom:users-personal-info-last-name'),
-          name: 'last-name',
-          type: 'text',
+          /** Row field docs: https://payloadcms.com/docs/fields/row */
+          type: 'row',
+          fields: [
+            {
+              /** Text field docs: https://payloadcms.com/docs/fields/text */
+              label: ({ t }: TLabel) => t('custom:users-personal-info-first-name'),
+              name: 'first-name',
+              type: 'text',
+            },
+            {
+              /** Text field docs: https://payloadcms.com/docs/fields/text */
+              label: ({ t }: TLabel) => t('custom:users-personal-info-last-name'),
+              name: 'last-name',
+              type: 'text',
+            },
+          ],
         },
       ],
     },
