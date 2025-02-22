@@ -3,8 +3,8 @@
 import type { Metadata } from 'next';
 
 import { NotFoundPage, generatePageMetadata } from '@payloadcms/next/views';
-import config from '@repo/payload/payload-config';
-import { importMap } from '../importMap';
+import config from '@repo/payload/config';
+import { importMap } from '@repo/payload/importmap';
 
 type Args = {
   params: Promise<{

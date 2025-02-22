@@ -1,11 +1,13 @@
 /* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
 /* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
-import config from '@repo/payload/payload-config';
 import '@payloadcms/next/css';
+
 import { RootLayout, handleServerFunctions } from '@payloadcms/next/layouts';
 import type { ServerFunctionClient } from 'payload';
 
-import { importMap } from './admin/importMap.js';
+import config from '@repo/payload/config';
+import { importMap } from '@repo/payload/importmap';
+
 import './custom.scss';
 
 type Args = {
