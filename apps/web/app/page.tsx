@@ -1,48 +1,12 @@
-import { getPayload } from '@repo/payload/payload-api';
-import type { User } from '@repo/payload/payload.types';
+import { getAllUsers, getFirstUser } from '@repo/payload/queries/users';
 
 import { User as UserIcon } from '@repo/icons';
 import { MFDLogo } from '@repo/icons/mfd';
 
 import { notFound } from 'next/navigation';
-import { cache } from 'react';
-
-const getUser = cache(async (): Promise<User | null> => {
-  const payload = await getPayload();
-
-  const result = await payload.find({
-    collection: 'users',
-    pagination: false,
-    select: {
-      email: true,
-    },
-    limit: 1,
-    depth: 0,
-  });
-
-  if (!result?.docs?.length) {
-    return null;
-  }
-
-  return result.docs[0] as User;
-});
-
-export const generateStaticParams = async () => {
-  const payload = await getPayload();
-
-  const result = await payload.find({
-    collection: 'users',
-    depth: 0,
-    pagination: false,
-  });
-
-  return result.docs.map((user) => ({
-    id: user.id,
-  }));
-};
 
 export default async function HomePage() {
-  const user = await getUser();
+  const user = await getFirstUser();
 
   if (!user) {
     notFound();
@@ -75,3 +39,11 @@ export default async function HomePage() {
     </main>
   );
 }
+
+export const generateStaticParams = async () => {
+  const users = await getAllUsers();
+
+  return users.map((user) => ({
+    id: user.id,
+  }));
+};
