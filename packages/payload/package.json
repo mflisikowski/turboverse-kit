@@ -16,6 +16,8 @@
     "info": "pnpm payload info"
   },
   "dependencies": {
+    "@repo/icons": "workspace:*",
+    "@repo/i18n": "workspace:*",
     "@payloadcms/db-vercel-postgres": "3.20.0",
     "@payloadcms/next": "3.20.0",
     "@payloadcms/translations": "3.20.0",
@@ -28,7 +30,6 @@
   },
   "devDependencies": {
     "@repo/env": "workspace:*",
-    "@repo/i18n": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "22.9.0",
     "@types/react": "19.0.7",
@@ -36,34 +37,23 @@
     "typescript": "5.7.3"
   },
   "exports": {
-    "./*": "./src/*.ts",
-    "./next.config": "./src/next.config.ts",
-    "./access/*": "./src/access/*/index.ts",
-    "./blocks/*": "./src/blocks/*/index.ts",
-    "./collections/*": "./src/collections/*/index.ts",
-    "./components/*": "./src/components/*/index.ts",
-    "./fields/*": "./src/fields/*/index.ts",
-    "./globals/*": "./src/globals/*/index.ts",
-    "./helpers/*": "./src/helpers/*/index.ts",
-    "./hooks/*": "./src/hooks/*/index.ts",
-    "./plugins/*": "./src/plugins/*/index.ts",
-    "./payload-types": "./src/payload.types.ts",
-    "./payload-config": "./src/payload.config.ts",
-    "./payload-schema": "./src/payload.schema.ts",
-    "./payload-api": "./src/payload-api.ts"
+    "./next-config": "./src/next.config.ts",
+    "./queries": "./src/queries/index.ts",
+    "./queries/*": "./src/queries/*/index.ts",
+    "./queries/**": "./src/queries/**/*.ts",
+    "./importmap": "./src/payload.importmap.ts",
+    "./config": "./src/payload.config.ts",
+    "./schema": "./src/payload.schema.ts",
+    "./types": "./src/payload.types.ts"
   },
   "watch": {
     "generate:types": {
-      "patterns": [
-        "src"
-      ],
+      "patterns": ["src"],
       "extensions": "ts,tsx",
       "quiet": false
     },
     "generate:dbschema": {
-      "patterns": [
-        "src"
-      ],
+      "patterns": ["src"],
       "extensions": "ts,tsx",
       "quiet": false
     }

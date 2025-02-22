@@ -8,7 +8,7 @@ const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 
 export const db = vercelPostgresAdapter({
-  generateSchemaOutputFile: path.resolve(dirname, 'payload.schema.ts'),
+  generateSchemaOutputFile: path.resolve(dirname, '../schema.ts'),
   idType: 'uuid',
   pool: {
     connectionString: env.PAYLOAD_PRIVATE_DATABASE_URI,
