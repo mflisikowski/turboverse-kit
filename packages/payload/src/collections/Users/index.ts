@@ -14,9 +14,15 @@ export const Users: CollectionConfig = {
   fields: [
     {
       /** Group field docs: https://payloadcms.com/docs/fields/group */
-      name: 'personal-info',
       label: ({ t }: TLabel) => t('custom:users-personal-info'),
+      name: 'personal-info',
       type: 'group',
+
+      // https://payloadcms.com/docs/fields/overview#admin-options
+      admin: {
+        disableListColumn: true,
+      },
+
       fields: [
         {
           /** Row field docs: https://payloadcms.com/docs/fields/row */
@@ -24,12 +30,14 @@ export const Users: CollectionConfig = {
           fields: [
             {
               /** Text field docs: https://payloadcms.com/docs/fields/text */
+              required: true,
               label: ({ t }: TLabel) => t('custom:users-personal-info-first-name'),
               name: 'first-name',
               type: 'text',
             },
             {
               /** Text field docs: https://payloadcms.com/docs/fields/text */
+              required: true,
               label: ({ t }: TLabel) => t('custom:users-personal-info-last-name'),
               name: 'last-name',
               type: 'text',
