@@ -1,6 +1,15 @@
-import { SupportedLocales } from './config';
+import { type Locale, defaultLocale, isValidLocale, locales } from './config';
 
 export const nextIntlConfig = {
-  defaultLocale: SupportedLocales.PL,
-  locales: [SupportedLocales.PL, SupportedLocales.EN],
+  defaultLocale,
+  locales,
+} as const;
+
+export interface I18nParams {
+  lang: Locale;
+}
+
+export const getI18nParams = (params: { lang?: string }): I18nParams => {
+  const lang = params.lang && isValidLocale(params.lang) ? params.lang : defaultLocale;
+  return { lang };
 };

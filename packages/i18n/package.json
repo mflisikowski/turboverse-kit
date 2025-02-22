@@ -18,6 +18,9 @@
     "typescript": "5.7.3"
   },
   "exports": {
+    "./translations/cms": "./src/translations/cms/index.ts",
+    "./translations/web": "./src/translations/web/index.ts",
+    "./config": "./src/config.ts",
     "./cms": "./src/cms.ts",
     "./web": "./src/web.ts"
   }
