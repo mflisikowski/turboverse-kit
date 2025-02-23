@@ -61,6 +61,16 @@ export interface UserAuthOperations {
  */
 export interface User {
   id: string;
+  'personal-info': {
+    'first-name': string;
+    'last-name': string;
+  };
+  /**
+   * User role determines access to the admin panel.
+   */
+  roles: {
+    roles: 'admin' | 'public';
+  };
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -129,6 +139,17 @@ export interface PayloadMigration {
  * via the `definition` "users_select".
  */
 export interface UsersSelect<T extends boolean = true> {
+  'personal-info'?:
+    | T
+    | {
+        'first-name'?: T;
+        'last-name'?: T;
+      };
+  roles?:
+    | T
+    | {
+        roles?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
   email?: T;

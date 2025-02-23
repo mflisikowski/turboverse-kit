@@ -1,6 +1,13 @@
 import type { TLabel } from '@repo/i18n/translations/cms';
 import type { CollectionConfig } from 'payload';
 
+import { AdminAccess } from './admin-access';
+
+export const UserRoles = {
+  Public: 'public',
+  Admin: 'admin',
+} as const;
+
 export const Users: CollectionConfig = {
   labels: {
     singular: ({ t }: TLabel) => t('custom:users-singular'),
@@ -43,6 +50,42 @@ export const Users: CollectionConfig = {
               type: 'text',
             },
           ],
+        },
+      ],
+    },
+    {
+      /** Group field docs: https://payloadcms.com/docs/fields/group */
+      label: ({ t }: TLabel) => t('custom:user-roles'),
+      name: 'roles',
+      type: 'group',
+
+      access: {
+        create: AdminAccess,
+        update: AdminAccess,
+      },
+
+      // https://payloadcms.com/docs/fields/overview#admin-options
+      admin: {
+        disableListColumn: true,
+      },
+
+      fields: [
+        {
+          /** Select field docs: https://payloadcms.com/docs/fields/select */
+          options: [
+            {
+              label: ({ t }: TLabel) => t('custom:user-roles-admin'),
+              value: UserRoles.Admin,
+            },
+            {
+              label: ({ t }: TLabel) => t('custom:user-roles-public'),
+              value: UserRoles.Public,
+            },
+          ],
+          required: true,
+          label: ({ t }: TLabel) => t('custom:user-roles'),
+          name: 'roles',
+          type: 'select',
         },
       ],
     },
