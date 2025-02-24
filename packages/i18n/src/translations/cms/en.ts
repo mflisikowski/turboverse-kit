@@ -10,5 +10,15 @@ export const en = {
     'user-roles': 'Role',
     'user-roles-admin': 'Admin',
     'user-roles-public': 'Public',
+
+    'pages-singular': 'Page',
+    'pages-plural': 'Pages',
+
+    'pages-content': 'Content',
+    'pages-hero': 'Hero',
+    'pages-published-at': 'Published At',
+    'pages-slug': 'Slug',
+    'pages-slug-description': 'Automatically generated URL based on the page title',
+    'pages-title': 'Title',
   },
 } as const;

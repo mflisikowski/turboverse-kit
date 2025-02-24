@@ -361,6 +361,9 @@ importers:
       '@repo/icons':
         specifier: workspace:*
         version: link:../icons
+      '@repo/utils':
+        specifier: workspace:*
+        version: link:../utils
       next:
         specifier: 15.1.7
         version: 15.1.7(@babel/core@7.24.5)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.77.4)
@@ -468,6 +471,9 @@ importers:
       clsx:
         specifier: 2.1.1
         version: 2.1.1
+      slugify:
+        specifier: ^1.6.6
+        version: 1.6.6
       tailwind-merge:
         specifier: 3.0.1
         version: 3.0.1
