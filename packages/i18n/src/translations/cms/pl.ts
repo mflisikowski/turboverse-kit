@@ -20,5 +20,10 @@ export const pl = {
     'pages-slug': 'Adres URL',
     'pages-slug-description': 'Automatycznie generowany adres URL na podstawie tytułu strony',
     'pages-title': 'Tytuł',
+
+    'pages-breadcrumbs': 'Okruszki nawigacyjne',
+    'pages-breadcrumbs-singular': 'Okruszek nawigacyjny',
+    'pages-breadcrumbs-plural': 'Okruszki nawigacyjne',
+    'pages-parent': 'Strona nadrzędna',
   },
 } as const;

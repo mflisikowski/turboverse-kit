@@ -20,5 +20,10 @@ export const en = {
     'pages-slug': 'Slug',
     'pages-slug-description': 'Automatically generated URL based on the page title',
     'pages-title': 'Title',
+
+    'pages-breadcrumbs': 'Breadcrumbs',
+    'pages-breadcrumbs-singular': 'Breadcrumb',
+    'pages-breadcrumbs-plural': 'Breadcrumbs',
+    'pages-parent': 'Parent Page',
   },
 } as const;

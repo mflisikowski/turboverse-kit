@@ -4,14 +4,6 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
-    "generate:importmap": "pnpm --filter @repo/payload generate:importmap",
-    "generate:dbschema": "pnpm --filter @repo/payload generate:db-schema",
-    "generate:types": "pnpm --filter @repo/payload generate:types",
-    "migrate:create": "pnpm --filter @repo/payload migrate:create",
-    "migrate:fresh": "pnpm --filter @repo/payload migrate:fresh",
-    "migrate:reset": "pnpm --filter @repo/payload migrate:reset",
-    "migrate": "pnpm --filter @repo/payload migrate",
-    "info": "pnpm --filter @repo/payload info",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -19,14 +11,15 @@
   },
   "dependencies": {
     "@payloadcms/next": "3.23.0",
-    "@repo/payload": "workspace:*",
+    "@repo/payload-config": "workspace:*",
+    "@repo/payload-importmap": "workspace:*",
     "next": "15.1.7",
     "payload": "3.23.0",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
   "devDependencies": {
-    "@repo/payload": "workspace:*",
+    "@repo/payload-types": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@repo/utils": "workspace:*",

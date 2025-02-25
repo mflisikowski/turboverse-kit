@@ -1,0 +1,24 @@
+{
+  "name": "@repo/payload-collections",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@payloadcms/plugin-nested-docs": "3.23.0",
+    "@repo/i18n": "workspace:*",
+    "@repo/payload-components": "workspace:*",
+    "@repo/payload-hooks": "workspace:*",
+    "@repo/payload-types": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "payload": "3.23.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "22.9.0",
+    "typescript": "5.7.3"
+  },
+  "exports": {
+    "./pages": "./src/pages.ts",
+    "./users": "./src/users.ts"
+  }
+}

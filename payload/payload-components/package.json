@@ -1,0 +1,21 @@
+{
+  "name": "@repo/payload-components",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@payloadcms/ui": "3.23.0",
+    "@repo/utils": "workspace:*",
+    "next": "15.1.7",
+    "payload": "3.23.0"
+  },
+  "devDependencies": {
+    "@repo/payload-types": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "22.9.0",
+    "typescript": "5.7.3"
+  },
+  "exports": {
+    "./breadcrumbs-row-label": "./src/breadcrumbs-row-label.tsx"
+  }
+}

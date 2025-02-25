@@ -1,8 +1,7 @@
-import { getAllUsers, getFirstUser } from '@repo/payload/queries/users';
-
 import { User as UserIcon } from '@repo/icons';
 import { MFDLogo } from '@repo/icons/mfd';
-
+import { getAllUsers } from '@repo/payload-queries/users-get-all';
+import { getFirstUser } from '@repo/payload-queries/users-get-first';
 import { notFound } from 'next/navigation';
 
 export default async function HomePage() {

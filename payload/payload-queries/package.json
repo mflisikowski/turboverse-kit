@@ -1,0 +1,23 @@
+{
+  "name": "@repo/payload-queries",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@repo/payload-config": "workspace:*",
+    "@repo/payload-types": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "payload": "3.23.0",
+    "react": "19.0.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "22.9.0",
+    "@types/react": "19.0.7",
+    "typescript": "5.7.3"
+  },
+  "exports": {
+    "./users-get-first": "./src/users-get-first.ts",
+    "./users-get-all": "./src/users-get-all.ts"
+  }
+}

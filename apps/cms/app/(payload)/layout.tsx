@@ -5,8 +5,8 @@ import '@payloadcms/next/css';
 import { RootLayout, handleServerFunctions } from '@payloadcms/next/layouts';
 import type { ServerFunctionClient } from 'payload';
 
-import config from '@repo/payload/config';
-import { importMap } from '@repo/payload/importmap';
+import config from '@repo/payload-config/config';
+import { importMap } from '@repo/payload-importmap';
 
 import './custom.scss';
 

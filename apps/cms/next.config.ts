@@ -1,4 +1,4 @@
-import { createNextConfig } from '@repo/payload/next-config';
+import { createNextConfig } from '@repo/payload-config/next-config';
 
 const customConfig = createNextConfig({
   nextConfig: {},
