@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@payloadcms/next": "3.23.0",
     "@repo/icons": "workspace:*",
     "@repo/payload-config": "workspace:*",
     "@repo/payload-queries": "workspace:*",

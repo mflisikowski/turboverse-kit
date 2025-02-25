@@ -3,7 +3,7 @@
 import type { Metadata } from 'next';
 
 import { RootPage, generatePageMetadata } from '@payloadcms/next/views';
-import config from '@repo/payload-config/config';
+import config from '@repo/payload-config';
 import { importMap } from '@repo/payload-importmap';
 
 type Args = {

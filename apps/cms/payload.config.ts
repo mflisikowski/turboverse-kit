@@ -1,1 +1,1 @@
-export * from '@repo/payload-config/config';
+export * from '@repo/payload-config';
