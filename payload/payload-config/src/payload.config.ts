@@ -60,16 +60,12 @@ export default buildConfig({
    * @see https://payloadcms.com/docs/admin/overview#admin-options
    */
   admin: {
-    // importMap: {
-    //   baseDir: path.resolve(__dirname),
-    // },
-
-    // components: {
-    //   graphics: {
-    //     Icon: '@repo/icons/payload#Icon',
-    //     Logo: '@repo/icons/payload#Logo',
-    //   },
-    // },
+    components: {
+      graphics: {
+        Icon: '@repo/icons/payload#Icon',
+        Logo: '@repo/icons/payload#Logo',
+      },
+    },
 
     meta: {
       titleSuffix: ' | Turboverse CMS',
@@ -79,6 +75,12 @@ export default buildConfig({
           url: '/favicon.ico',
         },
       ],
+    },
+
+    autoLogin: {
+      email: 'contact@mflisikowski.dev',
+      password: '1234',
+      prefillOnly: true,
     },
 
     user: Users.slug,
