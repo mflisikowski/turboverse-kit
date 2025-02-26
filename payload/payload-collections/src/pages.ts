@@ -1,7 +1,7 @@
 import type { TLabel } from '@repo/i18n/translations/cms';
 import type { CollectionConfig } from 'payload';
 
-// import { generateSlug } from '@repo/payload-hooks/generate-slug';
+import { pageGenerateSlug } from '@repo/payload-hooks/page-generate-slug';
 
 import { createBreadcrumbsField } from '@payloadcms/plugin-nested-docs';
 import { createParentField } from '@payloadcms/plugin-nested-docs';
@@ -87,13 +87,13 @@ export const Pages: CollectionConfig = {
       admin: {
         initCollapsed: true,
         components: {
-          // RowLabel: '@repo/payload-components/breadcrumb-row-label',
+          RowLabel: '@repo/payload-components/breadcrumbs-row-label',
         },
       },
 
-      // hooks: {
-      //   beforeChange: [generateSlug],
-      // },
+      hooks: {
+        beforeChange: [pageGenerateSlug],
+      },
     }),
   ],
 
