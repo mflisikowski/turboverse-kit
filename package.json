@@ -2,7 +2,9 @@
   "name": "turboverse-kit",
   "private": true,
   "scripts": {
-    "update:turbo": "pnpx @turbo/codemod@latest update",
+    "payload:generate:importmap": "pnpm --filter @repo/payload-config generate:importmap",
+    "payload:generate:types": "pnpm --filter @repo/payload-config generate:types",
+    "turbo:update": "pnpx @turbo/codemod@latest update",
     "clean": "rm -rf .turbo node_modules",
     "clean:workspaces": "turbo clean",
     "build": "turbo build",
