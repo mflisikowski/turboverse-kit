@@ -25,5 +25,8 @@ export const en = {
     'pages-breadcrumbs-singular': 'Breadcrumb',
     'pages-breadcrumbs-plural': 'Breadcrumbs',
     'pages-parent': 'Parent Page',
+
+    'pages-is-navigable': 'Is Navigable',
+    'pages-is-navigable-description': 'Whether the page is navigable',
   },
 } as const;

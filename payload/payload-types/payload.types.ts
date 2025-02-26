@@ -119,6 +119,7 @@ export interface Page {
   id: string;
   publishedAt: string;
   title: string;
+  isNavigable?: boolean | null;
   slug?: string | null;
   parent?: (string | null) | Page;
   breadcrumbs?:
@@ -220,6 +221,7 @@ export interface PayloadMigration {
 export interface PagesSelect<T extends boolean = true> {
   publishedAt?: T;
   title?: T;
+  isNavigable?: T;
   slug?: T;
   parent?: T;
   breadcrumbs?:

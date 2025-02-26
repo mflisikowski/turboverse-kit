@@ -25,5 +25,8 @@ export const pl = {
     'pages-breadcrumbs-singular': 'Okruszek nawigacyjny',
     'pages-breadcrumbs-plural': 'Okruszki nawigacyjne',
     'pages-parent': 'Strona nadrzędna',
+
+    'pages-is-navigable': 'Widoczność w nawigacji',
+    'pages-is-navigable-description': 'Określa czy strona będzie widoczna w menu nawigacyjnym',
   },
 } as const;

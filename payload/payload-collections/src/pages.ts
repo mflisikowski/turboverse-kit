@@ -41,8 +41,20 @@ export const Pages: CollectionConfig = {
       unique: true,
       name: 'title',
       type: 'text',
-
       label: ({ t }: TLabel) => t('custom:pages-title'),
+      admin: {
+        width: '50%',
+      },
+    },
+    {
+      /** Checkbox field docs: https://payloadcms.com/docs/fields/checkbox */
+      name: 'isNavigable',
+      type: 'checkbox',
+      label: ({ t }: TLabel) => t('custom:pages-is-navigable'),
+      admin: {
+        width: '50%',
+        description: ({ t }: TLabel) => t('custom:pages-is-navigable-description'),
+      },
     },
     {
       defaultValue: () => DEFAULT_SLUG,
