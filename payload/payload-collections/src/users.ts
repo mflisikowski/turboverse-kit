@@ -1,4 +1,4 @@
-import type { TLabel } from '@repo/i18n/translations/cms';
+import type { TLabel } from '@repo/i18n/cms/translations';
 import type { CollectionConfig } from 'payload';
 
 export const UserRoles = {

@@ -1,4 +1,4 @@
-import type { TLabel } from '@repo/i18n/translations/cms';
+import type { TLabel } from '@repo/i18n/cms/translations';
 import type { CollectionConfig } from 'payload';
 
 import { pageGenerateSlug } from '@repo/payload-hooks/page-generate-slug';
@@ -15,6 +15,21 @@ export const Pages: CollectionConfig = {
   labels: {
     singular: ({ t }: TLabel) => t('custom:pages-singular'),
     plural: ({ t }: TLabel) => t('custom:pages-plural'),
+  },
+
+  versions: {
+    /**
+     * Enabling drafts causes issues with the 'pageGenerateSlug' hook
+     * resulting in "Unhandled Runtime Error (AbortError: Fetch is aborted)"
+     * TODO: Keep drafts disabled for now. Need to implement alternative slug generation approach
+     * that works with the draft system to resolve the fetch abort errors.
+     */
+    drafts: {
+      schedulePublish: false,
+      autosave: false,
+    },
+
+    maxPerDoc: 6,
   },
 
   fields: [
@@ -39,12 +54,11 @@ export const Pages: CollectionConfig = {
       defaultValue: () => DEFAULT_TITLE,
       required: true,
       unique: true,
+      label: ({ t }: TLabel) => t('custom:pages-title'),
       name: 'title',
       type: 'text',
-      label: ({ t }: TLabel) => t('custom:pages-title'),
-      admin: {
-        width: '50%',
-      },
+
+      typescriptSchema: [() => ({ type: 'string' })],
     },
     {
       /** Checkbox field docs: https://payloadcms.com/docs/fields/checkbox */
@@ -66,6 +80,7 @@ export const Pages: CollectionConfig = {
       label: ({ t }: TLabel) => t('custom:pages-slug'),
       admin: {
         position: 'sidebar',
+        readOnly: true,
         description: ({ t }: TLabel) => t('custom:pages-slug-description'),
       },
     },
@@ -104,7 +119,7 @@ export const Pages: CollectionConfig = {
       },
 
       hooks: {
-        beforeChange: [pageGenerateSlug],
+        beforeValidate: [pageGenerateSlug],
       },
     }),
   ],
