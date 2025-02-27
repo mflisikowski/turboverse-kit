@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@payloadcms/translations": "3.23.0",
+    "next": "15.1.7",
+    "next-intl": "^3.26.5",
     "payload": "3.23.0",
     "react": "19.0.0"
   },
@@ -18,10 +20,12 @@
     "typescript": "5.7.3"
   },
   "exports": {
-    "./translations/cms": "./src/translations/cms/index.ts",
-    "./translations/web": "./src/translations/web/index.ts",
-    "./config": "./src/config.ts",
-    "./cms": "./src/cms.ts",
-    "./web": "./src/web.ts"
+    "./cms/translations": "./src/cms/translations/index.ts",
+    "./cms": "./src/cms/index.ts",
+    "./web/translations": "./src/web/translations/index.ts",
+    "./web/request": "./src/web/request.ts",
+    "./web/routing": "./src/web/routing.ts",
+    "./web": "./src/web/index.ts",
+    "./config": "./src/config.ts"
   }
 }

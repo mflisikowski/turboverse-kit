@@ -3,8 +3,8 @@ import type { Config } from 'payload';
 import { en } from '@payloadcms/translations/languages/en';
 import { pl } from '@payloadcms/translations/languages/pl';
 
-import { defaultLocale, localeLabels } from './config';
-import { translations } from './translations/cms';
+import { defaultLocale, localeLabels } from '../config';
+import { translations } from './translations';
 
 export const localization: Config['localization'] = {
   defaultLocale: defaultLocale,

@@ -18,7 +18,7 @@ export const en = {
     'pages-hero': 'Hero',
     'pages-published-at': 'Published At',
     'pages-slug': 'Slug',
-    'pages-slug-description': 'Automatically generated URL based on the page title',
+    'pages-slug-description': 'Automatically generated URL after publishing the page',
     'pages-title': 'Title',
 
     'pages-breadcrumbs': 'Breadcrumbs',

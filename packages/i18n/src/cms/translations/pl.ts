@@ -18,7 +18,7 @@ export const pl = {
     'pages-hero': 'Hero',
     'pages-published-at': 'Data publikacji',
     'pages-slug': 'Adres URL',
-    'pages-slug-description': 'Automatycznie generowany adres URL na podstawie tytułu strony',
+    'pages-slug-description': 'Adres URL tworzony automatycznie po publikacji strony',
     'pages-title': 'Tytuł',
 
     'pages-breadcrumbs': 'Okruszki nawigacyjne',
