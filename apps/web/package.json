@@ -12,11 +12,13 @@
   "dependencies": {
     "@payloadcms/next": "3.23.0",
     "@repo/icons": "workspace:*",
+    "@repo/i18n": "workspace:*",
     "@repo/payload-config": "workspace:*",
     "@repo/payload-queries": "workspace:*",
     "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
     "next": "15.1.7",
+    "next-intl": "^3.26.5",
     "payload": "3.23.0",
     "react": "19.0.0",
     "react-dom": "19.0.0"
@@ -24,6 +26,7 @@
   "devDependencies": {
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@repo/payload-types": "workspace:*",
     "@types/node": "22.9.0",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
