@@ -11,7 +11,7 @@ export default async function PageTemplate({
     slug: string[];
   }>;
 }) {
-  const { slug = [], locale } = await params;
+  const { slug = ['/strona-glowna'], locale } = await params;
 
   const page = await getPageBySlug(`/${slug.join('/')}`);
 

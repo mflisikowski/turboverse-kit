@@ -1,2 +1,2 @@
-export { default as PageTemplate } from './[locale]/[...slug]/page';
-export { generateMetadata } from './[locale]/[...slug]/page';
+export { generateMetadata, generateStaticParams } from './[locale]/[...slug]/page';
+export { default } from './[locale]/[...slug]/page';
