@@ -714,6 +714,9 @@ importers:
       '@payloadcms/plugin-nested-docs':
         specifier: 3.23.0
         version: 3.23.0(payload@3.23.0(bufferutil@4.0.9)(graphql@16.10.0)(monaco-editor@0.52.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)(utf-8-validate@6.0.5))
+      '@payloadcms/plugin-redirects':
+        specifier: ^3.28.1
+        version: 3.28.1(payload@3.23.0(bufferutil@4.0.9)(graphql@16.10.0)(monaco-editor@0.52.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)(utf-8-validate@6.0.5))
       '@payloadcms/translations':
         specifier: 3.23.0
         version: 3.23.0
@@ -2752,6 +2755,11 @@ packages:
     resolution: {integrity: sha512-ZcjZTqoIy/eLLFMTZ/bbcDdYvZduMyjsLlN9L+M7iImlACymJyy0zW3hgCxta+wrCR+EXdyEVEW2Gbmh25RJxw==}
     peerDependencies:
       payload: 3.23.0
+
+  '@payloadcms/plugin-redirects@3.28.1':
+    resolution: {integrity: sha512-fyWwuqhFTQuX+QolypD4WUs9s9BlWfgq5d+UXPdDyBsRAZx03UJPssJQtzZY2taQqV82akuIeOEcV2tIVnr3hQ==}
+    peerDependencies:
+      payload: 3.28.1
 
   '@payloadcms/translations@3.23.0':
     resolution: {integrity: sha512-yYH35vjl51BF+DPKoF6cGAwWQSLhs3exkcMzW/Kty3Lkv9iz6D3MYKkQLnfSyiGUwu5wEqY1K8JtVIj4RFAJGA==}
@@ -9602,6 +9610,10 @@ snapshots:
       - typescript
 
   '@payloadcms/plugin-nested-docs@3.23.0(payload@3.23.0(bufferutil@4.0.9)(graphql@16.10.0)(monaco-editor@0.52.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)(utf-8-validate@6.0.5))':
+    dependencies:
+      payload: 3.23.0(bufferutil@4.0.9)(graphql@16.10.0)(monaco-editor@0.52.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)(utf-8-validate@6.0.5)
+
+  '@payloadcms/plugin-redirects@3.28.1(payload@3.23.0(bufferutil@4.0.9)(graphql@16.10.0)(monaco-editor@0.52.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)(utf-8-validate@6.0.5))':
     dependencies:
       payload: 3.23.0(bufferutil@4.0.9)(graphql@16.10.0)(monaco-editor@0.52.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)(utf-8-validate@6.0.5)
 

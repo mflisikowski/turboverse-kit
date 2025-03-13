@@ -1,5 +1,6 @@
 import { vercelPostgresAdapter } from '@payloadcms/db-vercel-postgres';
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs';
+import { redirectsPlugin } from '@payloadcms/plugin-redirects';
 
 import { env } from '@repo/env/payload';
 import { i18n } from '@repo/i18n/cms';
@@ -32,6 +33,12 @@ export default buildConfig({
    * @see https://payloadcms.com/docs/plugins/overview
    */
   plugins: [
+    /**
+     * @see https://payloadcms.com/docs/plugins/redirects
+     */
+    redirectsPlugin({
+      collections: ['pages'],
+    }),
     /**
      * @see https://payloadcms.com/docs/plugins/nested-docs
      */
