@@ -52,6 +52,7 @@ export const Pages: CollectionConfig = {
     {
       /** Text field docs: https://payloadcms.com/docs/fields/text */
       defaultValue: () => DEFAULT_TITLE,
+      localized: true,
       required: true,
       unique: true,
       label: ({ t }: TLabel) => t('custom:pages-title'),
@@ -72,6 +73,7 @@ export const Pages: CollectionConfig = {
     },
     {
       defaultValue: () => DEFAULT_SLUG,
+      localized: true,
       unique: true,
       index: true,
       type: 'text',
