@@ -1,4 +1,4 @@
-import { type Locale, defaultLocale, isValidLocale, locales } from '../config';
+import { defaultLocale, locales } from '../config';
 
 export const nextIntlConfig = {
   defaultLocale,
