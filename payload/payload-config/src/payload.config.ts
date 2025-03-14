@@ -93,6 +93,14 @@ export default buildConfig({
     user: Users.slug,
   },
 
+  routes: {
+    /**
+     * @see https://payloadcms.com/docs/admin/overview#customizing-root-level-routes
+     * You can change the Root-level Routes as needed, such as to mount the Admin Panel at the root of your application.
+     */
+    admin: '/',
+  },
+
   /**
    * @see https://payloadcms.com/docs/configuration/i18n
    */
