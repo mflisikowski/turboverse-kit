@@ -1,8 +1,11 @@
 import { vercelPostgresAdapter } from '@payloadcms/db-vercel-postgres';
+import { resendAdapter } from '@payloadcms/email-resend';
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs';
 import { redirectsPlugin } from '@payloadcms/plugin-redirects';
 
-import { env } from '@repo/env/payload';
+import { env as emailEnv } from '@repo/env/email';
+import { env as payloadEnv } from '@repo/env/payload';
+
 import { i18n } from '@repo/i18n/cms';
 import { slugify } from '@repo/utils/slugify';
 
@@ -15,6 +18,15 @@ import { Users } from '@repo/payload-collections/users';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+const {
+  PAYLOAD_PRIVATE_AUTO_LOGIN_PASSWORD,
+  PAYLOAD_PRIVATE_AUTO_LOGIN_EMAIL,
+  PAYLOAD_PRIVATE_DATABASE_URI,
+  PAYLOAD_PRIVATE_SECRET,
+} = payloadEnv;
+
+const { RESEND_API_KEY, RESEND_FROM_EMAIL } = emailEnv;
 
 export default buildConfig({
   /**
@@ -61,7 +73,13 @@ export default buildConfig({
   /**
    * @see https://payloadcms.com/docs/configuration/overview#config-options
    */
-  secret: env.PAYLOAD_PRIVATE_SECRET,
+  secret: PAYLOAD_PRIVATE_SECRET,
+
+  email: resendAdapter({
+    defaultFromAddress: RESEND_FROM_EMAIL,
+    defaultFromName: 'Turboverse CMS',
+    apiKey: RESEND_API_KEY,
+  }),
 
   /**
    * @see https://payloadcms.com/docs/admin/overview#admin-options
@@ -85,8 +103,8 @@ export default buildConfig({
     },
 
     autoLogin: {
-      email: 'contact@mflisikowski.dev',
-      password: '1234',
+      password: PAYLOAD_PRIVATE_AUTO_LOGIN_PASSWORD,
+      email: PAYLOAD_PRIVATE_AUTO_LOGIN_EMAIL,
       prefillOnly: true,
     },
 
@@ -113,7 +131,7 @@ export default buildConfig({
     generateSchemaOutputFile: path.resolve(__dirname, './schema.ts'),
     idType: 'uuid',
     pool: {
-      connectionString: env.PAYLOAD_PRIVATE_DATABASE_URI,
+      connectionString: PAYLOAD_PRIVATE_DATABASE_URI,
     },
   }),
 });

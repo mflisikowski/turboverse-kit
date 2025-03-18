@@ -19,6 +19,8 @@ export const env = createEnv({
     PAYLOAD_PRIVATE_REVALIDATION_KEY: z.string(),
     PAYLOAD_PRIVATE_DATABASE_URI: z.string(),
     PAYLOAD_PRIVATE_SECRET: z.string(),
+    PAYLOAD_PRIVATE_AUTO_LOGIN_EMAIL: z.string().optional(),
+    PAYLOAD_PRIVATE_AUTO_LOGIN_PASSWORD: z.string().optional(),
   },
 
   skipValidation,
