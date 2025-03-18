@@ -7,7 +7,7 @@
   "types": "./payload.types.ts",
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "payload": "3.23.0",
+    "payload": "3.28.1",
     "typescript": "5.7.3"
   },
   "exports": {

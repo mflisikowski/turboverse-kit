@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@repo/utils": "workspace:*",
     "@repo/payload-types": "workspace:*",
-    "payload": "3.23.0",
-    "next": "15.1.7"
+    "@repo/utils": "workspace:*",
+    "next": "15.1.7",
+    "payload": "3.28.1"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",

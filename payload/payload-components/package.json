@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@payloadcms/ui": "3.23.0",
+    "@payloadcms/ui": "3.28.1",
     "@repo/utils": "workspace:*",
     "next": "15.1.7",
-    "payload": "3.23.0"
+    "payload": "3.28.1"
   },
   "devDependencies": {
     "@repo/payload-types": "workspace:*",
