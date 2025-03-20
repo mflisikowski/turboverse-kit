@@ -93,7 +93,7 @@ export default buildConfig({
     },
 
     importMap: {
-      importMapFile: path.resolve(__dirname, 'importMap.js'),
+      importMapFile: path.resolve(__dirname, '../../payload-importmap/importMap.js'),
     },
 
     meta: {

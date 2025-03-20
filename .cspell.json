@@ -17,7 +17,8 @@
     "turboverse",
     "rels",
     "posthog",
-    "pageleave"
+    "pageleave",
+    "importmap"
   ],
   "ignorePaths": [
     "packages/i18n/**",

@@ -50,6 +50,9 @@ importers:
       '@repo/payload-config':
         specifier: workspace:*
         version: link:../../payload/payload-config
+      '@repo/payload-importmap':
+        specifier: workspace:*
+        version: link:../../payload/payload-importmap
       next:
         specifier: 15.1.7
         version: 15.1.7(@babel/core@7.24.5)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.77.4)
@@ -643,6 +646,15 @@ importers:
       typescript:
         specifier: 5.7.3
         version: 5.7.3
+
+  payload/payload-importmap:
+    dependencies:
+      '@repo/icons':
+        specifier: workspace:*
+        version: link:../../packages/icons
+      '@repo/payload-components':
+        specifier: workspace:*
+        version: link:../payload-components
 
   payload/payload-queries:
     dependencies:

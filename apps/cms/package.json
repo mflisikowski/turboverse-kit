@@ -14,6 +14,7 @@
     "@repo/icons": "workspace:*",
     "@repo/payload-components": "workspace:*",
     "@repo/payload-config": "workspace:*",
+    "@repo/payload-importmap": "workspace:*",
     "next": "15.1.7",
     "payload": "3.28.1",
     "react": "19.0.0",

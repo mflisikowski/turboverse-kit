@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
     "update:payload": "pnpm update -L @payloadcms/* payload",
-    "generate:importmap": "pnpm payload generate:importmap && cp src/importMap.js ../../apps/cms/app/importMap.js",
+    "generate:importmap": "pnpm payload generate:importmap",
     "generate:types": "pnpm payload generate:types",
     "migrate:create": "pnpm payload migrate:create",
     "migrate:fresh": "pnpm payload migrate:fresh",
