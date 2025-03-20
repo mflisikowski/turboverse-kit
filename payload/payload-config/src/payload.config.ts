@@ -38,7 +38,7 @@ export default buildConfig({
    * @see https://payloadcms.com/docs/configuration/overview#typescript
    */
   typescript: {
-    outputFile: path.resolve(__dirname, './payload.types.ts'),
+    outputFile: path.resolve(__dirname, '../../payload-types/payload.types.ts'),
   },
 
   /**
