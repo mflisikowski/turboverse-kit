@@ -465,6 +465,22 @@ importers:
 
   packages/validation: {}
 
+  payload/payload-access:
+    dependencies:
+      payload:
+        specifier: 3.28.1
+        version: 3.28.1(bufferutil@4.0.9)(graphql@16.10.0)(typescript@5.7.3)(utf-8-validate@6.0.5)
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../tools/typescript-config
+      '@types/node':
+        specifier: 22.9.0
+        version: 22.9.0
+      typescript:
+        specifier: 5.7.3
+        version: 5.7.3
+
   payload/payload-collections:
     dependencies:
       '@payloadcms/plugin-nested-docs':
@@ -473,6 +489,9 @@ importers:
       '@repo/i18n':
         specifier: workspace:*
         version: link:../../packages/i18n
+      '@repo/payload-access':
+        specifier: workspace:*
+        version: link:../payload-access
       '@repo/payload-components':
         specifier: workspace:*
         version: link:../payload-components
@@ -9761,7 +9780,7 @@ snapshots:
   tsx@4.19.2:
     dependencies:
       esbuild: 0.23.1
-      get-tsconfig: 4.8.1
+      get-tsconfig: 4.10.0
     optionalDependencies:
       fsevents: 2.3.3
 

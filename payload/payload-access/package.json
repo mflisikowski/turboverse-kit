@@ -1,0 +1,19 @@
+{
+  "name": "@repo/payload-access",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "payload": "3.28.1"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "22.9.0",
+    "typescript": "5.7.3"
+  },
+  "exports": {
+    "./collections/*": "./src/collections/*.ts",
+    "./globals/*": "./src/globals/*.ts",
+    "./fields/*": "./src/fields/*.ts"
+  }
+}
