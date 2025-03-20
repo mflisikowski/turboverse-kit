@@ -7,6 +7,7 @@ type BreadcrumbItem = NonNullable<Page['breadcrumbs']>[number];
 
 export default function RowLabel(): string {
   const { data } = useRowLabel<BreadcrumbItem>();
+  const label = data?.label as string;
 
-  return data?.url || '';
+  return label;
 }
