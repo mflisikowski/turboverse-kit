@@ -92,6 +92,10 @@ export default buildConfig({
       },
     },
 
+    importMap: {
+      importMapFile: path.resolve(__dirname, 'importMap.js'),
+    },
+
     meta: {
       titleSuffix: ' | Turboverse CMS',
       icons: [
