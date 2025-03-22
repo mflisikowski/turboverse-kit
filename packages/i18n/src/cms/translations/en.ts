@@ -28,5 +28,10 @@ export const en = {
 
     'pages-is-navigable': 'Is Navigable',
     'pages-is-navigable-description': 'Whether the page is navigable',
+
+    'navigation-label': 'Navigation',
+    'navigation-items': 'Navigation items',
+    'navigation-item-label': 'Displayed text',
+    'navigation-item-link': 'Page',
   },
 } as const;

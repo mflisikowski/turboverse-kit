@@ -1,0 +1,94 @@
+import type { TLabel } from '@repo/i18n/cms/translations';
+
+import type { GlobalConfig } from 'payload';
+
+export const Navigation: GlobalConfig = {
+  label: ({ t }: TLabel) => t('custom:navigation-label'),
+
+  fields: [
+    {
+      /** Array field docs: https://payloadcms.com/docs/fields/array */
+      required: true,
+      name: 'items',
+      type: 'array',
+
+      fields: [
+        {
+          /** Text field docs: https://payloadcms.com/docs/fields/text */
+          required: true,
+          name: 'label',
+          type: 'text',
+          label: ({ t }: TLabel) => t('custom:navigation-item-label'),
+        },
+        {
+          /** Relationship field docs: https://payloadcms.com/docs/fields/relationship */
+          relationTo: 'pages',
+          required: true,
+          name: 'page',
+          type: 'relationship',
+          label: ({ t }: TLabel) => t('custom:navigation-item-link'),
+          filterOptions: ({ relationTo }) => {
+            if (relationTo === 'pages') {
+              return {
+                isNavigable: {
+                  equals: true,
+                },
+              };
+            }
+
+            return false;
+          },
+        },
+        {
+          /** Array field docs: https://payloadcms.com/docs/fields/array */
+          name: 'children',
+          type: 'array',
+
+          label: ({ t }: TLabel) => t('custom:navigation-items'),
+          admin: {
+            components: {
+              RowLabel: '@repo/payload-components/row-label',
+            },
+          },
+
+          fields: [
+            {
+              /** Text field docs: https://payloadcms.com/docs/fields/text */
+              required: true,
+              name: 'label',
+              type: 'text',
+              label: ({ t }: TLabel) => t('custom:navigation-item-label'),
+            },
+            {
+              /** Relationship field docs: https://payloadcms.com/docs/fields/relationship */
+              relationTo: 'pages',
+              required: true,
+              name: 'page',
+              type: 'relationship',
+              label: ({ t }: TLabel) => t('custom:navigation-item-link'),
+              filterOptions: ({ relationTo }) => {
+                if (relationTo === 'pages') {
+                  return {
+                    isNavigable: {
+                      equals: true,
+                    },
+                  };
+                }
+
+                return false;
+              },
+            },
+          ],
+        },
+      ],
+      admin: {
+        components: {
+          RowLabel: '@repo/payload-components/row-label',
+        },
+      },
+      label: ({ t }: TLabel) => t('custom:navigation-items'),
+    },
+  ],
+
+  slug: 'navigation',
+};

@@ -16,6 +16,6 @@
     "typescript": "5.7.3"
   },
   "exports": {
-    "./breadcrumbs-row-label": "./src/breadcrumbs-row-label.tsx"
+    "./*": "./src/*.tsx"
   }
 }

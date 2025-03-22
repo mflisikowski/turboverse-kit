@@ -28,5 +28,10 @@ export const pl = {
 
     'pages-is-navigable': 'Widoczność w nawigacji',
     'pages-is-navigable-description': 'Określa czy strona będzie widoczna w menu nawigacyjnym',
+
+    'navigation-label': 'Nawigacja',
+    'navigation-items': 'Elementy nawigacji',
+    'navigation-item-label': 'Tekst wyświetlany',
+    'navigation-item-link': 'Strona',
   },
 } as const;

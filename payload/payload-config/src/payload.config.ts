@@ -13,6 +13,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildConfig } from 'payload';
 
+import { Navigation } from '@repo/payload-collections/navigation';
 import { Pages } from '@repo/payload-collections/pages';
 import { Users } from '@repo/payload-collections/users';
 
@@ -33,6 +34,11 @@ export default buildConfig({
    * @see https://payloadcms.com/docs/configuration/collections
    */
   collections: [Pages, Users],
+
+  /**
+   * @see https://payloadcms.com/docs/configuration/globals
+   */
+  globals: [Navigation],
 
   /**
    * @see https://payloadcms.com/docs/configuration/overview#typescript

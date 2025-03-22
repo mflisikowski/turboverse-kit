@@ -116,7 +116,7 @@ export const Pages: CollectionConfig = {
       admin: {
         initCollapsed: true,
         components: {
-          RowLabel: '@repo/payload-components/breadcrumbs-row-label',
+          RowLabel: '@repo/payload-components/row-label',
         },
       },
 

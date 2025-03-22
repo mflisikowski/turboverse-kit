@@ -19,7 +19,6 @@
     "typescript": "5.7.3"
   },
   "exports": {
-    "./pages": "./src/pages.ts",
-    "./users": "./src/users.ts"
+    "./*": "./src/*.ts"
   }
 }
