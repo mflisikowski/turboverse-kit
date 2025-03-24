@@ -1,0 +1,14 @@
+---
+description: Use for each payload cms stuff i requested a help
+globs: 
+alwaysApply: false
+---
+Before starting any tasks, display “💥 PAYLOADCMS rule working:” and read all the documentation of the request.
+
+Analyze all packages located in payload/payload-*, and create a file tree (excluding unnecessary files like node_modules, etc.) to stay updated on the Payload CMS structure in the project.
+
+Remember to import all PayloadCMS-related packages using @repo/payload-*.
+
+Run the script to generate types by navigating to payload/payload-config. The script you need to run is “generate:types”. Once the process is complete, display “💥 PAYLOADCMS types generated”.
+
+Before finishing, display “💥 PAYLOADCMS rule finished”.
