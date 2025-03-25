@@ -1,5 +1,8 @@
 {
   "name": "@repo/validation",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules"
+  }
 }

@@ -5,6 +5,9 @@
   "type": "module",
   "main": "./payload.types.ts",
   "types": "./payload.types.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules"
+  },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "payload": "3.29.0",
