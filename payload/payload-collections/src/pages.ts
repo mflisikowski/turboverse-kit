@@ -2,7 +2,6 @@ import type { TLabel } from '@repo/i18n/cms/translations';
 import type { CollectionConfig } from 'payload';
 
 import { pageGenerateSlug } from '@repo/payload-hooks/page-generate-slug';
-import { pageUpdateNavigation } from '@repo/payload-hooks/page-update-navigation';
 
 import { createBreadcrumbsField } from '@payloadcms/plugin-nested-docs';
 import { createParentField } from '@payloadcms/plugin-nested-docs';
@@ -127,9 +126,7 @@ export const Pages: CollectionConfig = {
     }),
   ],
 
-  hooks: {
-    afterChange: [pageUpdateNavigation],
-  },
+  hooks: {},
 
   admin: {
     defaultColumns: ['title', 'slug', 'updatedAt'],
