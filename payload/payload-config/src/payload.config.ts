@@ -1,13 +1,10 @@
 import { postgresAdapter } from '@payloadcms/db-postgres';
 import { resendAdapter } from '@payloadcms/email-resend';
-import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs';
-import { redirectsPlugin } from '@payloadcms/plugin-redirects';
 
 import { env as emailEnv } from '@repo/env/email';
 import { env as payloadEnv } from '@repo/env/payload';
 
 import { i18n } from '@repo/i18n/cms';
-import { slugify } from '@repo/utils/slugify';
 
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -16,6 +13,9 @@ import { buildConfig } from 'payload';
 import { Navigation } from '@repo/payload-collections/navigation';
 import { Pages } from '@repo/payload-collections/pages';
 import { Users } from '@repo/payload-collections/users';
+
+import { nestedDocsPlugin } from '@repo/payload-plugins/nested-document';
+import { redirectsPlugin } from '@repo/payload-plugins/redirect';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -50,31 +50,7 @@ export default buildConfig({
   /**
    * @see https://payloadcms.com/docs/plugins/overview
    */
-  plugins: [
-    /**
-     * @see https://payloadcms.com/docs/plugins/redirects
-     */
-    redirectsPlugin({
-      collections: ['pages'],
-    }),
-    /**
-     * @see https://payloadcms.com/docs/plugins/nested-docs
-     */
-    nestedDocsPlugin({
-      collections: ['pages'],
-      generateLabel: (_, doc) => doc.title as string,
-      generateURL: (docs) => {
-        const segments = docs
-          .map((doc) => {
-            const title = doc?.title;
-            if (!title || typeof title !== 'string') return '';
-            return slugify(title);
-          })
-          .filter(Boolean);
-        return `/${segments.join('/')}`;
-      },
-    }),
-  ],
+  plugins: [nestedDocsPlugin, redirectsPlugin],
 
   /**
    * @see https://payloadcms.com/docs/configuration/overview#config-options

@@ -1,0 +1,23 @@
+{
+  "name": "@repo/payload-plugins",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules"
+  },
+  "dependencies": {
+    "@payloadcms/plugin-nested-docs": "3.30.0",
+    "@payloadcms/plugin-redirects": "3.30.0",
+    "@repo/utils": "workspace:*",
+    "payload": "3.30.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "22.9.0",
+    "typescript": "5.7.3"
+  },
+  "exports": {
+    "./*": "./src/*.ts"
+  }
+}
