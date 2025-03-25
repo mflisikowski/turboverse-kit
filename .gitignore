@@ -41,8 +41,6 @@ yarn-error.log*
 
 # Repomix
 .repomix
-repomix-instruction.md
-repomix-output.md
 
 # TODO
 TODO.md
