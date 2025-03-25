@@ -67,6 +67,7 @@ export const Pages: CollectionConfig = {
       type: 'checkbox',
       label: ({ t }: TLabel) => t('custom:pages-is-navigable'),
       admin: {
+        hidden: true,
         width: '50%',
         description: ({ t }: TLabel) => t('custom:pages-is-navigable-description'),
       },
