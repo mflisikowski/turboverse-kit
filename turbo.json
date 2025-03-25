@@ -41,6 +41,9 @@
     },
     "payload:update": {
       "cache": false
+    },
+    "next:update": {
+      "cache": false
     }
   },
   "ui": "tui"

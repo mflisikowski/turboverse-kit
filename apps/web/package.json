@@ -10,16 +10,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@payloadcms/next": "3.29.0",
+    "@payloadcms/next": "3.30.0",
     "@repo/i18n": "workspace:*",
     "@repo/icons": "workspace:*",
     "@repo/payload-config": "workspace:*",
     "@repo/payload-queries": "workspace:*",
     "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
-    "next": "15.1.7",
+    "next": "15.2.3",
     "next-intl": "^3.26.5",
-    "payload": "3.29.0",
+    "payload": "3.30.0",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },

@@ -10,13 +10,13 @@
     "dev": "next dev --turbopack --port 3001"
   },
   "dependencies": {
-    "@payloadcms/next": "3.29.0",
+    "@payloadcms/next": "3.30.0",
     "@repo/icons": "workspace:*",
     "@repo/payload-components": "workspace:*",
     "@repo/payload-config": "workspace:*",
     "@repo/payload-importmap": "workspace:*",
-    "next": "15.1.7",
-    "payload": "3.29.0",
+    "next": "15.2.3",
+    "payload": "3.30.0",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },

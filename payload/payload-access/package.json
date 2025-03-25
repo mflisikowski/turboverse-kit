@@ -7,7 +7,7 @@
     "clean": "rm -rf .turbo node_modules"
   },
   "dependencies": {
-    "payload": "3.29.0"
+    "payload": "3.30.0"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
