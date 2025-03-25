@@ -1,14 +1,19 @@
 import type { TLabel } from '@repo/i18n/cms/translations';
-
 import type { GlobalConfig } from 'payload';
+
+import { UserRoles } from '@repo/payload-collections/users';
 
 export const Navigation: GlobalConfig = {
   label: ({ t }: TLabel) => t('custom:navigation-label'),
 
+  access: {
+    update: ({ req: { user } }) => user?.roles?.roles === UserRoles.Admin,
+    read: () => true,
+  },
+
   fields: [
     {
       /** Array field docs: https://payloadcms.com/docs/fields/array */
-      required: true,
       name: 'items',
       type: 'array',
 
