@@ -15,7 +15,7 @@
     "info": "pnpm payload info"
   },
   "dependencies": {
-    "@payloadcms/db-vercel-postgres": "3.30.0",
+    "@payloadcms/db-postgres": "3.30.0",
     "@payloadcms/email-resend": "3.30.0",
     "@payloadcms/next": "3.30.0",
     "@payloadcms/plugin-nested-docs": "3.30.0",

@@ -1,4 +1,4 @@
-import { vercelPostgresAdapter } from '@payloadcms/db-vercel-postgres';
+import { postgresAdapter } from '@payloadcms/db-postgres';
 import { resendAdapter } from '@payloadcms/email-resend';
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs';
 import { redirectsPlugin } from '@payloadcms/plugin-redirects';
@@ -137,7 +137,7 @@ export default buildConfig({
   /**
    * @see https://payloadcms.com/docs/database/overview
    */
-  db: vercelPostgresAdapter({
+  db: postgresAdapter({
     generateSchemaOutputFile: path.resolve(__dirname, './schema.ts'),
     idType: 'uuid',
     pool: {
