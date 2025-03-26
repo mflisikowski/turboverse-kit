@@ -32,17 +32,16 @@ export const Navigation: GlobalConfig = {
           name: 'page',
           type: 'relationship',
           label: ({ t }: TLabel) => t('custom:navigation-item-link'),
-          filterOptions: ({ relationTo }) => {
-            if (relationTo === 'pages') {
-              return {
-                isNavigable: {
-                  equals: true,
-                },
-              };
-            }
-
-            return false;
-          },
+          // filterOptions: ({ relationTo }) => {
+          //   if (relationTo === 'pages') {
+          //     return {
+          //       isNavigable: {
+          //         equals: true,
+          //       },
+          //     };
+          //   }
+          //   return false;
+          // },
         },
         {
           /** Array field docs: https://payloadcms.com/docs/fields/array */
