@@ -26,6 +26,9 @@ export const pl = {
     'pages-breadcrumbs-plural': 'Okruszki nawigacyjne',
     'pages-parent': 'Strona nadrzędna',
 
+    'pages-is-home-page': 'Strona główna',
+    'pages-is-home-page-description': 'Określa czy strona jest stroną główną',
+
     'pages-is-navigable': 'Widoczność w nawigacji',
     'pages-is-navigable-description': 'Określa czy strona będzie widoczna w menu nawigacyjnym',
 

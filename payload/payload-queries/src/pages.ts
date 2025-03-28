@@ -1,4 +1,5 @@
 import type { Page } from '@repo/payload-types';
+import type { TypedLocale } from 'payload';
 
 import { getPayload } from './payload';
 
@@ -37,6 +38,25 @@ export async function getPageBySlug(slug: string): Promise<Page> {
       },
       slug: {
         equals: slug,
+      },
+    },
+  });
+
+  return result.docs[0] as Page;
+}
+
+export async function getHomePage({ locale }: { locale: TypedLocale }): Promise<Page> {
+  const payload = await getPayload();
+
+  const result = await payload.find({
+    collection: 'pages',
+    locale,
+    where: {
+      isHomePage: {
+        equals: true,
+      },
+      _status: {
+        equals: 'published',
       },
     },
   });

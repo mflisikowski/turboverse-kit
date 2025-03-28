@@ -34,6 +34,19 @@ export const Pages: CollectionConfig = {
 
   fields: [
     {
+      /** Checkbox field docs: https://payloadcms.com/docs/fields/checkbox */
+      defaultValue: false,
+      required: false,
+      name: 'isHomePage',
+      type: 'checkbox',
+
+      label: ({ t }: TLabel) => t('custom:pages-is-home-page'),
+      admin: {
+        position: 'sidebar',
+        description: ({ t }: TLabel) => t('custom:pages-is-home-page-description'),
+      },
+    },
+    {
       /** Date field docs: https://payloadcms.com/docs/fields/date */
       defaultValue: () => new Date(),
       required: true,

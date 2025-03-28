@@ -26,6 +26,9 @@ export const en = {
     'pages-breadcrumbs-plural': 'Breadcrumbs',
     'pages-parent': 'Parent Page',
 
+    'pages-is-home-page': 'Home Page',
+    'pages-is-home-page-description': 'Whether the page is the home page',
+
     'pages-is-navigable': 'Is Navigable',
     'pages-is-navigable-description': 'Whether the page is navigable',
 
