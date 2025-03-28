@@ -1,8 +1,12 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 
+import { getNavigation } from '@repo/payload-queries/navigation';
+
 import { Navigation } from '@/features/navigation';
 import { Geist, Geist_Mono } from 'next/font/google';
+
+import '@repo/ui/globals.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -14,13 +18,12 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-import '@repo/ui/globals.css';
-
 export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { items } = await getNavigation();
   const messages = await getMessages();
   const locale = await getLocale();
 
@@ -31,9 +34,9 @@ export default async function RootLayout({
         suppressHydrationWarning
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="flex flex-col">
-            <Navigation />
-            <div className="flex-1">{children}</div>
+          <div className="flex min-h-screen flex-col">
+            <Navigation items={items} />
+            <main className="flex-1">{children}</main>
           </div>
         </NextIntlClientProvider>
       </body>
