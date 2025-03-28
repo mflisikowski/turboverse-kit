@@ -17,6 +17,7 @@
     "@repo/payload-queries": "workspace:*",
     "@repo/ui": "workspace:*",
     "@repo/utils": "workspace:*",
+    "lucide-react": "0.456.0",
     "next": "15.2.4",
     "next-intl": "^3.26.5",
     "payload": "3.30.0",

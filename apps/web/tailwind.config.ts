@@ -4,5 +4,5 @@ import baseConfig from '@repo/tailwind-config';
 
 export default {
   ...baseConfig,
-  content: [...(baseConfig.content || []), './app/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: ['./features/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
 } satisfies Config;
