@@ -22,8 +22,6 @@
     ".": {
       "import": "./src/payload.ts"
     },
-    "./users": "./src/users.ts",
-    "./pages": "./src/pages.ts",
-    "./navigation": "./src/navigation.ts"
+    "./*": "./src/*.ts"
   }
 }
