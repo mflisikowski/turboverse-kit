@@ -9,7 +9,7 @@
   "dependencies": {
     "@repo/payload-config": "workspace:*",
     "@repo/payload-types": "workspace:*",
-    "payload": "3.30.0",
+    "payload": "3.35.1",
     "react": "19.0.0"
   },
   "devDependencies": {

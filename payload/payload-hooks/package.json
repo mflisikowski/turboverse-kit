@@ -10,7 +10,7 @@
     "@repo/payload-types": "workspace:*",
     "@repo/utils": "workspace:*",
     "next": "15.2.4",
-    "payload": "3.30.0"
+    "payload": "3.35.1"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",

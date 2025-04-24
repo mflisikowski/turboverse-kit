@@ -7,10 +7,10 @@
     "clean": "rm -rf .turbo node_modules"
   },
   "dependencies": {
-    "@payloadcms/ui": "3.30.0",
+    "@payloadcms/ui": "3.35.1",
     "@repo/utils": "workspace:*",
     "next": "15.2.4",
-    "payload": "3.30.0"
+    "payload": "3.35.1"
   },
   "devDependencies": {
     "@repo/payload-types": "workspace:*",

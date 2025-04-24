@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@payloadcms/next": "3.30.0",
+    "@payloadcms/next": "3.35.1",
     "@repo/i18n": "workspace:*",
     "@repo/icons": "workspace:*",
     "@repo/payload-config": "workspace:*",
@@ -20,7 +20,7 @@
     "lucide-react": "0.456.0",
     "next": "15.2.4",
     "next-intl": "^3.26.5",
-    "payload": "3.30.0",
+    "payload": "3.35.1",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },

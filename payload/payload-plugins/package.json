@@ -7,10 +7,10 @@
     "clean": "rm -rf .turbo node_modules"
   },
   "dependencies": {
-    "@payloadcms/plugin-nested-docs": "3.30.0",
-    "@payloadcms/plugin-redirects": "3.30.0",
+    "@payloadcms/plugin-nested-docs": "3.35.1",
+    "@payloadcms/plugin-redirects": "3.35.1",
     "@repo/utils": "workspace:*",
-    "payload": "3.30.0"
+    "payload": "3.35.1"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
