@@ -27,7 +27,7 @@ const {
   PAYLOAD_PRIVATE_SECRET,
 } = payloadEnv;
 
-const { RESEND_API_KEY, RESEND_FROM_EMAIL } = emailEnv;
+const { RESEND_API_KEY, RESEND_FROM_EMAIL, RESEND_FROM_NAME } = emailEnv;
 
 export default buildConfig({
   /**
@@ -58,9 +58,9 @@ export default buildConfig({
   secret: PAYLOAD_PRIVATE_SECRET,
 
   email: resendAdapter({
-    defaultFromAddress: RESEND_FROM_EMAIL,
-    defaultFromName: 'Turboverse CMS',
-    apiKey: RESEND_API_KEY,
+    defaultFromAddress: RESEND_FROM_EMAIL ?? '',
+    defaultFromName: RESEND_FROM_NAME ?? '',
+    apiKey: RESEND_API_KEY || '',
   }),
 
   /**
