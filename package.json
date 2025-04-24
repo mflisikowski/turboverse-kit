@@ -6,6 +6,7 @@
     "payload:generate:types": "pnpm --filter @repo/payload-config generate:types",
     "payload:update": "pnpm update -r -L payload @payloadcms/*",
     "next:update": "pnpm update -r -L next",
+    "react:update": "pnpm update -r -L react react-dom",
     "turbo:update": "pnpx @turbo/codemod@latest update",
     "clean": "rm -rf .turbo node_modules",
     "clean:workspaces": "turbo clean",
