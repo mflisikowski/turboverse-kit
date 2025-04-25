@@ -1,13 +1,21 @@
 'use client';
 
-import { useRowLabel } from '@payloadcms/ui';
 import type { Page } from '@repo/payload-types';
+
+import { useRowLabel } from '@payloadcms/ui';
 
 type BreadcrumbItem = NonNullable<Page['breadcrumbs']>[number];
 
-export default function RowLabel(): string {
+export const NavigationItemRowLabel = (): string => {
   const { data } = useRowLabel<BreadcrumbItem>();
   const label = data?.label as string;
 
-  return label;
-}
+  return `${label ?? 'Navigation'}`;
+};
+
+export const BreadcrumbsRowLabel = (): string => {
+  const { data } = useRowLabel<BreadcrumbItem>();
+  const label = data?.label as string;
+
+  return `${label ?? 'Breadcrumbs'}`;
+};

@@ -90,7 +90,7 @@ export const Navigation: GlobalConfig = {
       ],
       admin: {
         components: {
-          RowLabel: '@repo/payload-components/row-label',
+          RowLabel: '@repo/payload-components/row-label#NavigationItemRowLabel',
         },
       },
       label: ({ t }: TLabel) => t('custom:navigation-items'),
