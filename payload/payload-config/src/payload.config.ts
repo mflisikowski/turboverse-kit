@@ -100,6 +100,9 @@ export default buildConfig({
     user: Users.slug,
   },
 
+  /**
+   * @see https://payloadcms.com/docs/admin/overview#customizing-routes
+   */
   routes: {
     /**
      * @see https://payloadcms.com/docs/admin/overview#customizing-root-level-routes
