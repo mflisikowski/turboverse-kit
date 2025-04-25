@@ -67,7 +67,7 @@ export default buildConfig({
   }),
 
   /**
-   * @see https://payloadcms.com/docs/admin/overview#admin-options
+   * @see https://payloadcms.com/docs/configuration/globals#admin-options
    */
   admin: {
     components: {
