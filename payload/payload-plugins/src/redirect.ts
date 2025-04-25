@@ -5,4 +5,9 @@ import { redirectsPlugin as plugin } from '@payloadcms/plugin-redirects';
  */
 export const redirectsPlugin = plugin({
   collections: ['pages'],
+  overrides: {
+    admin: {
+      group: false,
+    },
+  },
 });
