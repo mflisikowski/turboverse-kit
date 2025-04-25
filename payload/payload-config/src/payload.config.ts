@@ -67,6 +67,26 @@ export default buildConfig({
   }),
 
   /**
+   * @see https://payloadcms.com/docs/hooks/overview
+   */
+  hooks: {
+    afterError: [
+      async ({ result, error, req }) => {
+        req.payload.sendEmail({
+          subject: '[TURBOVERSE] - Error',
+          from: 'no-reply@mflisikowski.dev',
+          to: 'contact@mflisikowski.dev',
+          text: `
+            Error: ${JSON.stringify(error, null, 2)}
+            Result: ${JSON.stringify(result, null, 2)}
+            Request: ${JSON.stringify(req, null, 2)}
+            `,
+        });
+      },
+    ],
+  },
+
+  /**
    * @see https://payloadcms.com/docs/configuration/globals#admin-options
    */
   admin: {
