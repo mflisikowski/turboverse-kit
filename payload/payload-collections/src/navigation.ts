@@ -3,6 +3,9 @@ import type { GlobalConfig } from 'payload';
 
 import { UserRoles } from '@repo/payload-collections/users';
 
+/*
+ * @see https://payloadcms.com/docs/configuration/globals
+ */
 export const Navigation: GlobalConfig = {
   label: ({ t }: TLabel) => t('custom:navigation-label'),
 

@@ -6,6 +6,9 @@ export const UserRoles = {
   Admin: 'admin',
 } as const;
 
+/*
+ * @see https://payloadcms.com/docs/configuration/collections
+ */
 export const Users: CollectionConfig = {
   labels: {
     singular: ({ t }: TLabel) => t('custom:users-singular'),

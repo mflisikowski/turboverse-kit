@@ -11,6 +11,9 @@ import { slugify } from '@repo/utils/slugify';
 const DEFAULT_TITLE = `New Page ${timestamp}`;
 const DEFAULT_SLUG = `/${slugify(DEFAULT_TITLE)}`;
 
+/*
+ * @see https://payloadcms.com/docs/configuration/collections
+ */
 export const Pages: CollectionConfig = {
   labels: {
     singular: ({ t }: TLabel) => t('custom:pages-singular'),
