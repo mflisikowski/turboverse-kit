@@ -16,7 +16,8 @@
         "useImportRestrictions": "off",
         "useSortedClasses": "off",
         "useExplicitType": "off",
-        "noProcessEnv": "off"
+        "noProcessEnv": "off",
+        "noSecrets": "off"
       }
     }
   },
