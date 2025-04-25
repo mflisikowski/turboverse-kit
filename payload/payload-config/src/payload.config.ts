@@ -57,6 +57,9 @@ export default buildConfig({
    */
   secret: PAYLOAD_PRIVATE_SECRET,
 
+  /**
+   * @see https://payloadcms.com/docs/email/overview
+   */
   email: resendAdapter({
     defaultFromAddress: RESEND_FROM_EMAIL ?? '',
     defaultFromName: RESEND_FROM_NAME ?? '',
